@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+    <toolbox scope="application">
+        <tool key="math" class="org.apache.velocity.tools.generic.MathTool"/>
+    </toolbox>
+</tools>

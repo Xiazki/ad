@@ -22,15 +22,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="data-service" />
-        <module name="manage" />
         <module name="worker" />
+      </profile>
+      <profile default="false" name="Annotation profile for data-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="data-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for manage" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="manage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ad" target="1.5" />
-      <module name="data-service" target="1.5" />
-      <module name="manage" target="1.5" />
+      <module name="data-service" target="1.8" />
+      <module name="manage" target="1.8" />
       <module name="worker" target="1.5" />
     </bytecodeTargetLevel>
   </component>
