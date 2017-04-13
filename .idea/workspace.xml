@@ -2,340 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7023055d-5bd2-40cf-b3d5-ca1b75c100d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-slimscroll/slimScroll.jquery.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_kk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_eu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/ds/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_es_CL.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/header.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-slimscroll/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/entity/Permission.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_zh.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es_AR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/entity/base/BaseEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es_PE.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ru.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/simple-line-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_id.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_nl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/sass/select2-bootstrap.min.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/sr-Cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sr_lat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-slimscroll/jquery.slimscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/select2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/jquery.validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_lt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/additional-methods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_fi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-daterangepicker/daterangepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_bn_BD.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/backstretch/jquery.backstretch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pt_PT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_da.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_lv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/js/bootstrap-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/backstretch/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_th.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/backstretch/LICENSE-MIT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ca.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/chat.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hy_AM.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_cs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/entity/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/fonts/Simple-Line-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/auth/users.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_tr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ro.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pt_PT.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/css/bootstrap-switch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/js.cookie.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ge.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_no.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/quick-sidebar.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_tj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-daterangepicker/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/home/lists.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_vi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/css/select2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_nl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/fonts/Simple-Line-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ka.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_zh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es_PE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/select2.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/themes/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/quick-nav.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-daterangepicker/daterangepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/css/select2-bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_zh_TW.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_pt.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_is.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/Readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/morris/css/morris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fi.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/entity/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/bg_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pt_BR.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ko.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_el.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_pl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_tj.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ja.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_sr_lat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/icons-lte-ie7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/css/select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_de.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/fonts/Simple-Line-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_bn_BD.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-daterangepicker/daterangepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_it.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_de.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/css/bootstrap-rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/select2.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_uk.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_es_AR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/fullcalendar/fullcalendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_et.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_si.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_fa.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_bg.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/License.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_he.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_hy_AM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/methods_es_CL.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_my.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/dao/base/BaseDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_gl.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/localization/messages_my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/select2/js/i18n/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data-service/src/main/java/com/ad/dao/UserDao.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/jstree/throbber.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-datepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/ui-modals.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/login.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/error.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.uniform.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-hover-dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/jstree/40px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/dashboard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/java/com/ad/controller/LoginController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap.touchspin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/form-validation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/datatables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/icheck.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-tagsinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/resources/spring-context.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-timepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/components-date-time-pickers.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/typeahead.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/Simple-Line-Icons.dev.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/portlet-draggable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/search.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-fileinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/select2.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/resources/spring-web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jstree.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/jstree/32px.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/handlebars.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/java/com/ad/controller/BaseController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/datatables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-timepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-fileinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/datatable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/jstree/style.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap.touchspin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-datepicker3.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/datatables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/java/com/ad/controller/TestController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/search.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/typeahead.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/resources/spring-shiro.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/select2-bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/jstree/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/flv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/page.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/demo.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/resources/spring-beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/datatables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/profile.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/datatables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-datepicker.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/simple-line-icons.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/simple-line-icons/simple-line-icons.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/manage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/manage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/app.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/login_layout.vm" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/login_layout.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/components.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/components.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-service/build.develop.properties" afterPath="$PROJECT_DIR$/data-service/build.develop.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/manage.iml" afterPath="$PROJECT_DIR$/manage/manage.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/layout.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/layout.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/auth/user/list.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/bootstrap-switch.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/js/bootstrap-switch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/layout.vm" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/layout.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/quick-sidebar.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/quick-sidebar.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/daterangepicker-bs3.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-daterangepicker/daterangepicker.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/worker/worker.iml" afterPath="$PROJECT_DIR$/worker/worker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-service/src/main/resources/data-service.xml" afterPath="$PROJECT_DIR$/data-service/src/main/resources/data-service.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/bootstrap-switch.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/pages/css/login-5.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/pages/css/login-5.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-slimscroll/jquery.slimscroll.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/logo.png" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/jquery.validate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/layout.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/layout.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data-service/build.test.properties" afterPath="$PROJECT_DIR$/data-service/build.test.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/additional-methods.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/jquery-validation/js/additional-methods.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ad.iml" afterPath="$PROJECT_DIR$/ad.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/login.vm" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/login.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/plugins.min.css" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/plugins.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/js/jquery.backstretch.min.js" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/plugins/backstretch/jquery.backstretch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm" afterPath="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm" />
     </list>
     <ignored path="ad.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -382,31 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-5.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="49" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/chat.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="560" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.vm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar.vm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5730769">
-              <caret line="320" column="17" selection-start-line="320" selection-start-column="17" selection-end-line="320" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.vm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/auth/user/list.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16666667">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -496,11 +155,12 @@
         <option value="$PROJECT_DIR$/manage/src/main/java/com/ad/auth/ShiroAuth.java" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/static/metronic/css/themes/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/login.vm" />
-        <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/chat.vm" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/login_layout.vm" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/header.vm" />
         <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/layout.vm" />
+        <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm" />
+        <option value="$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/auth/user/list.vm" />
       </list>
     </option>
   </component>
@@ -605,6 +265,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -662,6 +323,170 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="velocity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -724,124 +549,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="morris" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -926,40 +633,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -967,7 +640,6 @@
       </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1528,7 +1200,8 @@
       <workItem from="1491740037287" duration="1886000" />
       <workItem from="1491911097439" duration="4806000" />
       <workItem from="1491922575714" duration="4599000" />
-      <workItem from="1491999517591" duration="5000" />
+      <workItem from="1491999517591" duration="2915000" />
+      <workItem from="1492049400274" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1491388312817</created>
@@ -1542,11 +1215,17 @@
       <option name="project" value="LOCAL" />
       <updated>1491492199940</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init commit">
+      <created>1491999576075</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1491999576075</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72632000" />
+    <option name="totallyTimeSpent" value="75547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1566,11 +1245,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13900863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32219827" sideWeight="0.48212352" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.48212352" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21497844" sideWeight="0.505698" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1643,19 +1322,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/home/lists.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="49" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,7 +1333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="560" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1911,34 +1580,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/home/lists.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/chat.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="560" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/login_layout.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18309858">
           <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="49" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1962,14 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/header.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1982,6 +1619,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/bg_01.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/pages/js/login-5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03190184">
+          <caret line="93" column="49" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/chat.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033333335">
+          <caret line="5" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="560" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/home/lists.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/layout.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1990,15 +1662,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/static/metronic/img/bg_01.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/header.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/layout/sidebar.vm">
+    <entry file="file://$PROJECT_DIR$/manage/src/main/webapp/WEB-INF/velocity/templates/auth/user/list.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5730769">
-          <caret line="320" column="17" selection-start-line="320" selection-start-column="17" selection-end-line="320" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.16666667">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
       </provider>
