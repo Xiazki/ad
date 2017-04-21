@@ -94,7 +94,7 @@ var Login = function () {
                     window.location.href = "/home";
                 } else {
                     //认证出错
-                    $("#err_msg").text("用户名和密码错误");
+                    $("#err_msg").text("用户名或密码错误");
                     $('.alert-danger', $('.login-form')).show();
                 }
             }

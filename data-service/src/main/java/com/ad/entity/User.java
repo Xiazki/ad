@@ -1,6 +1,7 @@
 package com.ad.entity;
 
 import com.ad.entity.base.BaseEntity;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
@@ -34,11 +35,13 @@ public class User extends BaseEntity<Long> {
      * 后面考虑不使用注解，使用中间表实体
      */
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Deprecated
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "ad_user_role", inverseJoinColumns = {@JoinColumn(name = "role_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
     private List<Role> roles;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Deprecated
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "ad_user_permission", inverseJoinColumns = {@JoinColumn(name = "permission_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
     private List<Permission> permissions;
 
@@ -90,18 +93,26 @@ public class User extends BaseEntity<Long> {
         this.phone = phone;
     }
 
+    /**
+     * 将直接使用中间表代替
+     * @return
+     */
+    @Deprecated
     public List<Role> getRoles() {
         return roles;
     }
 
+    @Deprecated
     public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
 
+    @Deprecated
     public List<Permission> getPermissions() {
         return permissions;
     }
 
+    @Deprecated
     public void setPermissions(List<Permission> permissions) {
         this.permissions = permissions;
     }

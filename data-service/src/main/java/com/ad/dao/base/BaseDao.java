@@ -1,9 +1,11 @@
 package com.ad.dao.base;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.persistence.Entity;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
@@ -14,6 +16,13 @@ public class BaseDao<T> {
     @Autowired
     private SessionFactory sessionFactory;
 
+    private Class<T> clazz;
+
+    public BaseDao() {
+        this.clazz = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass())
+                .getActualTypeArguments()[0];
+    }
+
     public void save(T t) {
         getSession().save(t);
     }
@@ -23,9 +32,6 @@ public class BaseDao<T> {
     }
 
     public T get(long id) {
-        Class<T> clazz = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass())
-                .getActualTypeArguments()[0];
-
         T t = (T) getSession().get(clazz, id);
         return t;
     }
@@ -36,6 +42,21 @@ public class BaseDao<T> {
             getSession().delete(t);
         }
     }
+
+    public Integer count() {
+        String hql = "from " + getClassName(clazz);
+        Query query = getSession().createQuery(hql);
+        return query.list().size();
+    }
+
+//    public List<T> list(Integer start, Integer length) {
+//        return list(start, length, null);
+//    }
+//
+//    public List<T> list(Integer start, Integer length, String search) {
+//        String hql = "from "+getClassName(clazz) + " o where ";
+//        return null;
+//    }
 
     public void batchSave(List<T> entities) {
         for (T t : entities) {
@@ -55,6 +76,15 @@ public class BaseDao<T> {
         }
     }
 
+    public String getClassName(Class<T> var1) {
+        String entityName = var1.getSimpleName();
+        Entity entity = var1.getAnnotation(Entity.class);
+        if (entity.name() != null && !"".equals(entity.name())) {
+            entityName = entity.name();
+        }
+        return entityName;
+    }
+
     protected Session getSession() {
         return sessionFactory.getCurrentSession();
     }
@@ -66,4 +96,5 @@ public class BaseDao<T> {
     public void setSessionFactory(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
 }

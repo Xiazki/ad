@@ -37,20 +37,20 @@
             <li class="heading">
                 <h3 class="uppercase">基础配置</h3>
             </li>
-            <li class="nav-item  ">
+            <li class="nav-item  #if($!active.contains("user")||$!active.contains("permission")) active open #end">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-diamond"></i>
                     <span class="title">权限管理</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item  ">
-                        <a href="ui_colors.html" class="nav-link ">
+                    <li class="nav-item #if($!active == "user") active open #end">
+                        <a href="/user" class="nav-link ">
                             <span class="title">用户管理</span>
                         </a>
                     </li>
-                    <li class="nav-item  ">
-                        <a href="ui_colors.html" class="nav-link ">
+                    <li class="nav-item  #if($!active == "permisison") active open #end">
+                        <a href="/permission" class="nav-link ">
                             <span class="title">权限管理</span>
                         </a>
                     </li>

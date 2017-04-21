@@ -10,16 +10,15 @@
                     </div>
 
                     <div class="actions">
-                        <a href="" class="btn btn-sm btn-circle blue">
+                        <a href="/user/add" class="btn btn-sm btn-circle blue">
                             <i class="fa fa-wrench"></i> 创建 </a>
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <div class="table-scrollable table-scrollable-borderless">
+                    <div class="">
                         <table class="table table-hover table-light" width="100%" id="user-list">
                             <thead>
                             <tr class="uppercase">
-                                <th></th>
                                 <th> 用户名称</th>
                                 <th> 部门</th>
                                 <th> 职务</th>
@@ -35,3 +34,4 @@
         </div>
     </div>
 </div>
+<script src="/static/pages/js/auth/user/list.js" type="text/javascript"></script>
