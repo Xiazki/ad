@@ -22,6 +22,8 @@ public class UserRequest implements Serializable {
 
     private String phone;
 
+    private Long role;
+
     public String getDepartment() {
         return department;
     }
@@ -76,5 +78,13 @@ public class UserRequest implements Serializable {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public Long getRole() {
+        return role;
+    }
+
+    public void setRole(Long role) {
+        this.role = role;
     }
 }

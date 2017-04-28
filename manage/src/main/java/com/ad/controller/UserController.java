@@ -4,10 +4,17 @@ import com.ad.bean.user.UserRequest;
 import com.ad.common.PageBean;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
+import com.ad.ds.PermissionService;
+import com.ad.ds.UserPermissionService;
+import com.ad.ds.UserRoleService;
 import com.ad.ds.UserService;
 import com.ad.ds.exception.ParamException;
+import com.ad.entity.Permission;
+import com.ad.entity.Role;
 import com.ad.entity.User;
 import com.ad.vo.User.UserVo;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -26,6 +34,15 @@ public class UserController extends BaseController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private UserPermissionService userPermissionService;
+
+    @Autowired
+    private PermissionService permissionService;
+
+    @Autowired
+    private UserRoleService userRoleService;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String toUserPage() {
@@ -64,7 +81,7 @@ public class UserController extends BaseController {
     }
 
     @RequestMapping(value = "delete/{id}", method = RequestMethod.GET)
-    public ResponseResult delete(@PathVariable(value = "id") Long id){
+    public ResponseResult delete(@PathVariable(value = "id") Long id) {
         userService.delete(id);
         return RestResultGenerator.genResult("删除成功");
     }
@@ -74,5 +91,32 @@ public class UserController extends BaseController {
     public ResponseResult add(UserRequest userRequest) throws ParamException {
         userService.saveOrUpdateUser(userRequest);
         return RestResultGenerator.genResult("保存成功！");
+    }
+
+    /**
+     * 向用户添加权限
+     *
+     * @param userId
+     * @param permissionIds
+     * @return
+     */
+    @RequestMapping(value = "permission/add", method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseResult addUserPermission(@RequestParam(value = "id") Long userId,
+                                            @RequestParam(value = "permissionIds[]") List<Long> permissionIds) {
+        userPermissionService.save(userId, permissionIds);
+        return RestResultGenerator.genResult("保存成功");
+    }
+
+    @RequestMapping(value = "permission/add/{id}", method = RequestMethod.GET)
+    public String toAddPermissionPage(@PathVariable(value = "id") Long userId, Model model) {
+        List<Permission> up = permissionService.listByUserId(userId);
+        Role role = userRoleService.getByUserId(userId);
+        List<Permission> rp = permissionService.listByRoleId(role.getId());
+        Set<Permission> ap = Sets.newHashSet();
+        ap.addAll(up);
+        ap.addAll(rp);
+        model.addAttribute("permissions", ap);
+        return "auth/user/permission";
     }
 }

@@ -3,6 +3,9 @@ package com.ad.controller;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
 import com.ad.ds.exception.ParamException;
+import com.ad.vo.PrincipalVo;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -47,4 +50,21 @@ public class BaseController {
         return RestResultGenerator.genErrorResult("服务器异常");
     }
 
+    /**
+     * 得到当前用户
+     * @return
+     */
+    protected PrincipalVo getPrincipalVo() {
+        Subject subject = SecurityUtils.getSubject();
+        return (PrincipalVo) subject.getPrincipal();
+    }
+
+    /**
+     * 得到当前登陆用户ID
+     * @return
+     */
+    protected Long getCurrentUserId() {
+        PrincipalVo principalVo = getPrincipalVo();
+        return principalVo.getCurrentUserId();
+    }
 }

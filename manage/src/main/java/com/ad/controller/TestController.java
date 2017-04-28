@@ -9,7 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by xiang on 2017/4/6.
@@ -41,4 +44,38 @@ public class TestController {
         return "login";
     }
 
+    public static void main(String[] args) {
+        Set<A> as = new TreeSet<>();
+        as.add(new A(1L, "2"));
+        as.add(new A(1L, "2"));
+        System.out.println(as.size());
+    }
+
+}
+
+class A implements Comparable {
+    private Long id;
+    private String name;
+
+    public A(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        A a = (A) o;
+
+        if (id != null ? !id.equals(a.id) : a.id != null) return false;
+        return name != null ? name.equals(a.name) : a.name == null;
+
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }

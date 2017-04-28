@@ -18,4 +18,18 @@ public class PermissionDao extends BaseDao<Permission> {
         Query query = getSession().createQuery(hql);
         return query.list();
     }
+
+    public List<Permission> listByUserId(Long userId) {
+        String hql = "select p from Permission p,UserPermission pu where p.id = pu.permissionId and pu.userId =:userId";
+        Query query = getSession().createQuery(hql);
+        query.setLong("userId", userId);
+        return query.list();
+    }
+
+    public List<Permission> listByRole(Long roleId) {
+        String hql = "select p from Permission p,RolePermission rp where p.id = rp.permissionId and rp.roleId =:roleId";
+        Query query = getSession().createQuery(hql);
+        query.setLong("roleId", roleId);
+        return query.list();
+    }
 }

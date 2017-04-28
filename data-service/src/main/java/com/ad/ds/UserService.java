@@ -27,6 +27,8 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
+    private UserRoleService userRoleService;
+
     public User getUserByName(String username) {
         return userDao.getUserByName(username);
     }
@@ -49,7 +51,7 @@ public class UserService {
 
     public void saveOrUpdateUser(UserRequest userRequest) throws ParamException {
         User user = new User();
-        if (userRequest.getId() > 0) {
+        if (userRequest.getId() != null && userRequest.getId() > 0) {
             //修改
             user = userDao.get(userRequest.getId());
             user.setUpdateTime(System.currentTimeMillis());
@@ -67,8 +69,11 @@ public class UserService {
         user.setPassword(encrypt);
         user.setEmail(userRequest.getEmail());
         user.setPhone(userRequest.getPhone());
-
         userDao.update(user);
+
+        if (userRequest.getRole() != null && userRequest.getRole() > 0) {
+            userRoleService.save(user.getId(), userRequest.getRole());
+        }
     }
 
     public Integer count() {

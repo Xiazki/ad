@@ -19,7 +19,7 @@ var PermissionAdd = function () {
             dataType: "JSON",
             success: function (d) {
                 if (d['success']) {
-                    window.location.href = '/user';
+                    window.location.href = '/permission';
                 } else {
                     $.notify(d['message'], {
                         type: 'danger', animate: {

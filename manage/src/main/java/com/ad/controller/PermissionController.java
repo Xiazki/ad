@@ -38,7 +38,7 @@ public class PermissionController extends BaseController {
         Permission permission = permissionService.get(id);
         model.addAttribute("id", id);
         model.addAttribute("permission", permission);
-        return "auth/permission/edit";
+        return "auth/permission/add";
     }
 
     @RequestMapping(value = "add", method = RequestMethod.POST)

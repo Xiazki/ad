@@ -39,4 +39,11 @@ public class PermissionService {
         permissionDao.update(per);
     }
 
+    public List<Permission> listByUserId(Long userId) {
+        return permissionDao.listByUserId(userId);
+    }
+
+    public List<Permission> listByRoleId(Long roleId) {
+        return permissionDao.listByRole(roleId);
+    }
 }

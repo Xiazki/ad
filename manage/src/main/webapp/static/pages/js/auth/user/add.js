@@ -28,7 +28,8 @@ var UserAdd = function () {
                 password: $("#password").val(),
                 phone: $("#phone").val(),
                 department: $("#department").val(),
-                job: $("#job").val()
+                job: $("#job").val(),
+                role: $("#role").val()
             },
             dataType: "JSON",
             success: function (d) {
