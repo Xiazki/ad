@@ -13,6 +13,11 @@ public class ProjectUserVo {
     private String projectName;
 
     /**
+     * 项目描述
+     */
+    private String desc;
+
+    /**
      * 项目服务器IP
      */
     private String serviceId;
@@ -124,5 +129,13 @@ public class ProjectUserVo {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

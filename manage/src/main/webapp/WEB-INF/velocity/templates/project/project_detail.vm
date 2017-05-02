@@ -1,0 +1,112 @@
+<div class="page-fixed-main-content">
+    <div class="row">
+        <div class="col-md-6 ">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption font-red-sunglo">
+                        <i class="icon-settings font-red-sunglo"></i>
+                        <span class="caption-subject bold uppercase"> 项目详情 </span>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group">
+                            <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown"> Actions
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-pencil"></i> Edit </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-trash-o"></i> Delete </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-ban"></i> Ban </a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="javascript:;"> Make admin </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <form role="form" id="project-save">
+                        <input type="hidden" id="id" value="$!pv.id">
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label>项目名称</label>
+                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                                    <input type="text" id="projectName" class="form-control" value="$!pv.projectName"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>详情</label>
+                                <div class="input-group">
+                                                    <span class="input-group-addon input-circle-left">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                                    <textarea  class="form-control" id="projectDesc" rows="3" placeholder="Email Address">$!pv.desc</textarea> </div>
+                            </div>
+                            <input type="hidden" id="userId" value="$!pv.userId">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">创建人</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" value="$!pv.userName" readonly>
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-user font-red"></i>
+                                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>所在服务器IP</label>
+                                <div class="input-icon">
+                                    <i class="fa fa-bell-o font-green"></i>
+                                    <input type="text" class="form-control" id="serverIp" value="$!pv.serverIp"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label>路 径</label>
+                                <div class="input-icon right">
+                                    <i class="fa fa-microphone fa-spin font-blue"></i>
+                                    <input type="text" class="form-control" id="path" placeholder="Right icon" value="$!pv.path"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Circle Input</label>
+                                <div class="input-icon right">
+                                    <i class="fa fa-microphone"></i>
+                                    <input type="text" class="form-control input-circle" placeholder="Right icon"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Input with Icon</label>
+                                <div class="input-group input-icon right">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-envelope font-purple"></i>
+                                                    </span>
+                                    <i class="fa fa-exclamation tooltips" data-original-title="Invalid email." data-container="body"></i>
+                                    <input id="email" class="input-error form-control" type="text" value=""> </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Input With Spinner</label>
+                                <input class="form-control spinner" type="text" placeholder="Process something"> </div>
+                            <div class="form-group">
+                                <label>Static Control</label>
+                                <p class="form-control-static"> email@example.com </p>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn blue">保存</button>
+                            <button type="button" class="btn default">部署</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/pages/js/project/project_detail.js" type="text/javascript"></script>

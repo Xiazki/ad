@@ -39,9 +39,11 @@ public class ProjectUserBiz {
             projectUserVo.setServiceId(p.getServerIp());
             projectUserVo.setStatus(p.getStatus());
             projectUserVo.setType(p.getType());
+            projectUserVo.setDesc(p.getDesc());
             projectUserVos.add(projectUserVo);
         }
 
         return projectUserVos;
     }
+
 }

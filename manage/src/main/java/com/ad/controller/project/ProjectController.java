@@ -2,13 +2,22 @@ package com.ad.controller.project;
 
 import com.ad.biz.ProjectBiz;
 import com.ad.biz.ProjectUserBiz;
+import com.ad.common.PageBean;
 import com.ad.controller.BaseController;
+import com.ad.ds.UserService;
+import com.ad.ds.project.ProjectService;
 import com.ad.ds.project.ProjectUserService;
+import com.ad.entity.User;
+import com.ad.entity.project.Project;
 import com.ad.vo.project.ProjectUserVo;
+import com.ad.vo.project.ProjectVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -20,13 +29,10 @@ import java.util.List;
 public class ProjectController extends BaseController {
 
     @Autowired
-    private ProjectUserService projectUserService;
+    private ProjectUserBiz projectUserBiz;
 
     @Autowired
     private ProjectBiz projectBiz;
-
-    @Autowired
-    private ProjectUserBiz projectUserBiz;
 
     @RequestMapping(value = "/user/list")
     public String toUserProjectPage(Model model) {
@@ -34,5 +40,23 @@ public class ProjectController extends BaseController {
         List<ProjectUserVo> vos = projectUserBiz.listProjectUserByUserId(currentUserId);
         model.addAttribute("vos", vos);
         return "project/user_projects";
+    }
+
+    @RequestMapping(value = "/detail/{id}")
+    public String toProjectDetail(@PathVariable(value = "id") Long id, Model model) {
+        ProjectVo vo = projectBiz.getById(id);
+        model.addAttribute("pv",vo);
+        return "project/project_detail";
+    }
+
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    @ResponseBody
+    public PageBean<ProjectVo> list(){
+        return null;
+    }
+
+    @RequestMapping(value = "/toProjectList",method = RequestMethod.GET)
+    public String toProjectList(){
+        return null;
     }
 }
