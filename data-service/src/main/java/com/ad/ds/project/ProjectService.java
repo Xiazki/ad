@@ -19,4 +19,8 @@ public class ProjectService {
     public Project getById(Long id) {
         return projectDao.get(id);
     }
+
+    public void saveOrUpdate(Project project){
+        projectDao.update(project);
+    }
 }

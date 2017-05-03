@@ -11,7 +11,7 @@
                     <span class="arrow open"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item start active open">
+                    <li class="nav-item start">
                         <a href="index.html" class="nav-link ">
                             <i class="icon-bar-chart"></i>
                             <span class="title">总览</span>
@@ -25,8 +25,8 @@
                             <span class="badge badge-success">1</span>
                         </a>
                     </li>
-                    <li class="nav-item start ">
-                        <a href="/project/user/list" class="nav-link  #if($!active == "project") active open #end">
+                    <li class="nav-item start #if($!active == "project") active open #end">
+                        <a href="/project/user/list" class="nav-link">
                             <i class="icon-graph"></i>
                             <span class="title">项目</span>
                             <span class="badge badge-danger">5</span>
@@ -42,6 +42,12 @@
             </li>
             <li class="nav-item start ">
                 <a href="dashboard_2.html" class="nav-link ">
+                    <i class="icon-target"></i>
+                    <span class="title">任务</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="dashboard_2.html" class="nav-link ">
                     <i class="icon-wallet"></i>
                     <span class="title">代办</span>
                 </a>
@@ -49,13 +55,19 @@
             <li class="nav-item start ">
                 <a href="dashboard_2.html" class="nav-link ">
                     <i class="icon-bulb"></i>
-                    <span class="title">问题</span>
+                    <span class="title">问题广场</span>
                 </a>
             </li>
             <li class="nav-item start ">
                 <a href="dashboard_2.html" class="nav-link ">
                     <i class="icon-layers"></i>
-                    <span class="title">日志</span>
+                    <span class="title">操作日志</span>
+                </a>
+            </li>
+            <li class="nav-item start ">
+                <a href="dashboard_2.html" class="nav-link ">
+                    <i class="icon-bag"></i>
+                    <span class="title">项目管理</span>
                 </a>
             </li>
             <li class="nav-item start ">

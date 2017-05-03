@@ -1,6 +1,7 @@
 package com.ad.ds.project;
 
 import com.ad.dao.project.ProjectUserDao;
+import com.ad.entity.User;
 import com.ad.entity.project.Project;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,10 @@ public class ProjectUserService {
      */
     public List<Project> listProjectUserByUserId(Long userId) {
         return projectUserDao.listUserProjectByUserId(userId);
+    }
+
+    public List<User> listUserByProjectId(Long projectId, Integer start, Integer length, String searchInfo) {
+        return projectUserDao.listUserByProjectId(projectId, start, length, searchInfo);
     }
 
     /**

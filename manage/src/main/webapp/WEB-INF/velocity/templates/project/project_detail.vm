@@ -10,7 +10,8 @@
                     </div>
                     <div class="actions">
                         <div class="btn-group">
-                            <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown"> Actions
+                            <a class="btn btn-sm green dropdown-toggle" href="javascript:;" data-toggle="dropdown">
+                                Actions
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu pull-right">
@@ -26,7 +27,7 @@
                                     <a href="javascript:;">
                                         <i class="fa fa-ban"></i> Ban </a>
                                 </li>
-                                <li class="divider"> </li>
+                                <li class="divider"></li>
                                 <li>
                                     <a href="javascript:;"> Make admin </a>
                                 </li>
@@ -44,7 +45,8 @@
                                                     <span class="input-group-addon">
                                                         <i class="fa fa-envelope"></i>
                                                     </span>
-                                    <input type="text" id="projectName" class="form-control" value="$!pv.projectName"></div>
+                                    <input type="text" id="projectName" class="form-control" value="$!pv.projectName">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label>详情</label>
@@ -52,58 +54,96 @@
                                                     <span class="input-group-addon input-circle-left">
                                                         <i class="fa fa-envelope"></i>
                                                     </span>
-                                    <textarea  class="form-control" id="projectDesc" rows="3" placeholder="Email Address">$!pv.desc</textarea> </div>
-                            </div>
-                            <input type="hidden" id="userId" value="$!pv.userId">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">创建人</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="exampleInputPassword1" value="$!pv.userName" readonly>
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-user font-red"></i>
-                                                    </span>
-                                </div>
+                                    <textarea class="form-control" id="projectDesc" rows="3"
+                                              placeholder="Email Address">$!pv.desc</textarea></div>
                             </div>
                             <div class="form-group">
                                 <label>所在服务器IP</label>
                                 <div class="input-icon">
                                     <i class="fa fa-bell-o font-green"></i>
-                                    <input type="text" class="form-control" id="serverIp" value="$!pv.serverIp"> </div>
+                                    <input type="text" class="form-control" id="serverIp" value="$!pv.serverIp"></div>
                             </div>
                             <div class="form-group">
                                 <label>路 径</label>
                                 <div class="input-icon right">
                                     <i class="fa fa-microphone fa-spin font-blue"></i>
-                                    <input type="text" class="form-control" id="path" placeholder="Right icon" value="$!pv.path"> </div>
+                                    <input type="text" class="form-control" id="path" placeholder="Right icon"
+                                           value="$!pv.path"></div>
                             </div>
-                            <div class="form-group">
-                                <label>Circle Input</label>
-                                <div class="input-icon right">
-                                    <i class="fa fa-microphone"></i>
-                                    <input type="text" class="form-control input-circle" placeholder="Right icon"> </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Input with Icon</label>
-                                <div class="input-group input-icon right">
+                            <input type="hidden" id="userId" value="$!pv.userId">
+                            #if($!isEdit)
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">创建人</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                               value="$!pv.userName" readonly>
                                                     <span class="input-group-addon">
-                                                        <i class="fa fa-envelope font-purple"></i>
+                                                        <i class="fa fa-user font-red"></i>
                                                     </span>
-                                    <i class="fa fa-exclamation tooltips" data-original-title="Invalid email." data-container="body"></i>
-                                    <input id="email" class="input-error form-control" type="text" value=""> </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Input With Spinner</label>
-                                <input class="form-control spinner" type="text" placeholder="Process something"> </div>
-                            <div class="form-group">
-                                <label>Static Control</label>
-                                <p class="form-control-static"> email@example.com </p>
-                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>状态</label>
+                                    <div class="input-icon right">
+                                        <i class="fa fa-microphone"></i>
+                                        <input type="text" class="form-control input-circle" placeholder="Right icon"
+                                            #if($!pv.status == 1)
+                                               value="运行中"
+                                            #elseif($!pv.status == 2)
+                                               value="部署中"
+                                            #else
+                                               value="已停止"
+                                            #end
+                                               readonly></div>
+                                </div>
+                            #end
                         </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn blue">保存</button>
-                            <button type="button" class="btn default">部署</button>
+                            <div class="btn-group">
+                                <button class="btn blue dropdown-toggle"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">保存<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0);" type="submit" id="submit">保存</a></li>
+                                    <li><a href="javascript:void(0);" id="sub_deploy">保存并部署</a></li>
+                                </ul>
+                            </div>
+                            #if($!pv.status == 1)
+                                <button id="stop" class="btn red">停止</button>
+                            #else
+                                <button type="submit" id="restart" class="btn green">重新启动</button>
+                            #end
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 ">
+            <div class="portlet light bordered">
+                <div class="portlet-title">
+                    <div class="caption caption-md">
+                        <i class="icon-bar-chart theme-font hide"></i>
+                        <span class="caption-subject font-blue-madison bold uppercase">参与用户</span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="">
+                        <table class="table table-hover table-light" width="100%" id="user-list">
+                            <thead>
+                            <tr class="uppercase">
+                                <th> 用户名称</th>
+                                <th> 部门</th>
+                                <th> 职务</th>
+                                <th> 邮箱</th>
+                                <th> 操作</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

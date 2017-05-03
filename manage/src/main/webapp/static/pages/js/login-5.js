@@ -91,7 +91,7 @@ var Login = function () {
             dataType: 'JSON',
             success: function (d) {
                 if (d['success']) {
-                    window.location.href = "/home";
+                    window.location.href = "/project/user/list";
                 } else {
                     //认证出错
                     $("#err_msg").text("用户名或密码错误");

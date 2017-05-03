@@ -43,7 +43,8 @@ public class ProjectVo {
             return null;
         }
         ProjectVo vo = new ProjectVo();
-        BeanUtils.copyProperties(project,vo);
+        BeanUtils.copyProperties(project, vo);
+        vo.setId(project.getId());
         vo.setCreateTime(new DateTime(project.getCreateTime()).toString(Constants.DATE_FORMAT));
         vo.setUpdateTime(new DateTime(project.getUpdateTime()).toString(Constants.DATE_FORMAT));
         return vo;
