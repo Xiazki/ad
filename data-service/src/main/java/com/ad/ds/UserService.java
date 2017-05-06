@@ -27,6 +27,7 @@ public class UserService {
     @Autowired
     private UserDao userDao;
 
+    @Autowired
     private UserRoleService userRoleService;
 
     public User getUserByName(String username) {

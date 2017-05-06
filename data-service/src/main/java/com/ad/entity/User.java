@@ -37,12 +37,12 @@ public class User extends BaseEntity<Long> {
 
     @Deprecated
     @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "ad_user_role", inverseJoinColumns = {@JoinColumn(name = "role_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
+    @JoinTable(name = "ad_user_role", inverseJoinColumns = {@JoinColumn(name = "ad_role_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
     private List<Role> roles;
 
     @Deprecated
     @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "ad_user_permission", inverseJoinColumns = {@JoinColumn(name = "permission_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
+    @JoinTable(name = "ad_user_permission", inverseJoinColumns = {@JoinColumn(name = "ad_permission_id")}, joinColumns = {@JoinColumn(name = "ad_user_id")})
     private List<Permission> permissions;
 
     public String getUsername() {

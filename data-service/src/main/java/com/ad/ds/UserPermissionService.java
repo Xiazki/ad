@@ -20,6 +20,7 @@ public class UserPermissionService {
     private UserPermissionDao userPermissionDao;
 
     public void save(Long userId, List<Long> permissionIds) {
+        userPermissionDao.deleteByUserId(userId);
         List<UserPermission> userPermissions = Lists.newArrayList();
         for (Long pId : permissionIds) {
             UserPermission userPermission = new UserPermission();

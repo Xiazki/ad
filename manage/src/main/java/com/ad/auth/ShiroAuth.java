@@ -52,7 +52,7 @@ public class ShiroAuth extends AuthorizingRealm {
         //加密
         PasswordService svc = new DefaultPasswordService();
         User user = userService.getUserByName(username);
-        if (user != null && user.getPassword().equals(password)) {
+        if (user != null && svc.passwordsMatch(password,user.getPassword())) {
             return new SimpleAuthenticationInfo(PrincipalVo.from(user), token.getPassword(), getName());
         }
         return null;

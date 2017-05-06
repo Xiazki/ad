@@ -1,9 +1,11 @@
 package com.ad.controller;
 
 import com.ad.bean.user.UserRequest;
+import com.ad.biz.ChoosePermissionBiz;
 import com.ad.common.PageBean;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
+import com.ad.common.constant.ChoosePermissionType;
 import com.ad.ds.PermissionService;
 import com.ad.ds.UserPermissionService;
 import com.ad.ds.UserRoleService;
@@ -13,6 +15,7 @@ import com.ad.entity.Permission;
 import com.ad.entity.Role;
 import com.ad.entity.User;
 import com.ad.vo.User.UserVo;
+import com.ad.vo.auth.ChoosePermissionVo;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +46,9 @@ public class UserController extends BaseController {
 
     @Autowired
     private UserRoleService userRoleService;
+
+    @Autowired
+    private ChoosePermissionBiz choosePermissionBiz;
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public String toUserPage() {
@@ -76,6 +82,7 @@ public class UserController extends BaseController {
         User user = userService.get(id);
         model.addAttribute("id", id);
         model.addAttribute("user", user);
+        model.addAttribute("roleId", user.getRoles().get(0).getId());
         model.addAttribute("isEdit", true);
         return "auth/user/add";
     }
@@ -93,6 +100,23 @@ public class UserController extends BaseController {
         return RestResultGenerator.genResult("保存成功！");
     }
 
+    @RequestMapping(value = "toAddPermission/{id}")
+    public String toAddPermission(@PathVariable(value = "id") Long userId, Model model) {
+        model.addAttribute("id", userId);
+        return "auth/user/permission";
+    }
+
+    @RequestMapping(value = "permission/list")
+    @ResponseBody
+    public PageBean listPermission(@RequestParam(name = "id") Long userId) {
+        PageBean<ChoosePermissionVo> pageBean = new PageBean<>();
+        List<ChoosePermissionVo> vos = choosePermissionBiz.listPermission(userId, ChoosePermissionType.USER.getType());
+        pageBean.setData(vos);
+        pageBean.setRecordsFiltered(vos.size());
+        pageBean.setRecordsTotal(vos.size());
+        return pageBean;
+    }
+
     /**
      * 向用户添加权限
      *
@@ -103,11 +127,12 @@ public class UserController extends BaseController {
     @RequestMapping(value = "permission/add", method = RequestMethod.POST)
     @ResponseBody
     public ResponseResult addUserPermission(@RequestParam(value = "id") Long userId,
-                                            @RequestParam(value = "permissionIds[]") List<Long> permissionIds) {
+                                            @RequestParam(value = "permissions[]") List<Long> permissionIds) {
         userPermissionService.save(userId, permissionIds);
         return RestResultGenerator.genResult("保存成功");
     }
 
+    @Deprecated
     @RequestMapping(value = "permission/add/{id}", method = RequestMethod.GET)
     public String toAddPermissionPage(@PathVariable(value = "id") Long userId, Model model) {
         List<Permission> up = permissionService.listByUserId(userId);

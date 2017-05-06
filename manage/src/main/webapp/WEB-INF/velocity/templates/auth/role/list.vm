@@ -1,0 +1,35 @@
+<div class="page-fixed-main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- 置顶列表 -->
+            <div class="portlet light ">
+                <div class="portlet-title">
+                    <div class="caption caption-md">
+                        <i class="icon-bar-chart theme-font hide"></i>
+                        <span class="caption-subject font-blue-madison bold uppercase">角色</span>
+                    </div>
+
+                    <div class="actions">
+                        <a href="/role/add" class="btn btn-sm btn-circle blue">
+                            <i class="fa fa-wrench"></i> 创建 </a>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="">
+                        <table class="table table-hover table-light" width="100%" id="role-list">
+                            <thead>
+                            <tr class="uppercase">
+                                <th> 角色名称</th>
+                                <th> 角色描述</th>
+                                <th> 操作</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/pages/js/auth/role/list.js" type="text/javascript"></script>

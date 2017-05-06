@@ -35,6 +35,7 @@ public class LoginController extends BaseController {
             subject.login(new UsernamePasswordToken(username, password));
             return RestResultGenerator.genResult("登陆成功");
         } catch (AuthenticationException var1) {
+            var1.printStackTrace();
             return RestResultGenerator.genErrorResult("账号密码错误");
         }
     }

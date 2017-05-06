@@ -30,6 +30,7 @@ var User = function () {
                 "render": function (data, type, row) {
                     var but = "";
                     var id = row['id'];
+                    but += '<button type="button" class="btn yellow btn-outline btn-xs permission-config" id="permission_' + id + '">配置权限</button>'
                     but += '<button type="button" class="btn dark btn-outline blue btn-xs edit-config" id="edit_' + id + '">修改</button>';
                     but += '<button type="button" class="btn red btn-outline blue btn-xs delete-config" id="delete_' + id + '">删除</button>';
                     return but;
@@ -37,6 +38,13 @@ var User = function () {
                 "targets": 4
             }],
             "drawCallback": function (settings) {
+
+                $(".permission-config").unbind("click");
+                $(".permission-config").bind("click", function () {
+                    var id = $(this).attr("id").split("_")[1];
+                    window.location.href = "/user/toAddPermission/" + id;
+                });
+
                 $(".edit-config").unbind("click");
                 $(".edit-config").bind("click", function () {
                     var id = $(this).attr("id").split("_")[1];
