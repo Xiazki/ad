@@ -34,4 +34,18 @@
 
     <!--spring事务注解-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--最大连接数-->
+        <property name="maxTotal" value="50"/>
+        <!--获取连接时检查有效性-->
+        <property name="testOnBorrow" value="true"/>
+        <!--归还时检查有效性-->
+        <property name="testOnReturn" value="true"/>
+    </bean>
+    <bean id="redisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg name="poolConfig" ref="jedisPoolConfig"/>
+        <constructor-arg name="uri" value="redis://localhost:6379/11"/>
+    </bean>
+
 </beans>

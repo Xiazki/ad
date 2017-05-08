@@ -2,6 +2,7 @@ package com.ad.controller.project;
 
 import com.ad.biz.ProjectBiz;
 import com.ad.biz.ProjectUserBiz;
+import com.ad.common.ContextHolder;
 import com.ad.common.PageBean;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
@@ -11,6 +12,7 @@ import com.ad.ds.project.ProjectService;
 import com.ad.ds.project.ProjectUserService;
 import com.ad.entity.User;
 import com.ad.entity.project.Project;
+import com.ad.reids.ProjectCache;
 import com.ad.vo.project.ProjectUserVo;
 import com.ad.vo.project.ProjectVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,10 +33,16 @@ public class ProjectController extends BaseController {
     private ProjectUserBiz projectUserBiz;
 
     @Autowired
+    private ProjectService projectService;
+
+    @Autowired
     private ProjectBiz projectBiz;
 
     @Autowired
     private ProjectUserService projectUserService;
+
+    @Autowired
+    private ProjectCache projectCache;
 
     @RequestMapping(value = "/user/list")
     public String toUserProjectPage(Model model) {
@@ -77,6 +85,15 @@ public class ProjectController extends BaseController {
         return pageBean;
     }
 
+    @RequestMapping(value = "select")
+    @ResponseBody
+    public ResponseResult userSelect(@RequestParam(value = "id") Long id) {
+        Project project = projectService.getById(id);
+        projectCache.setSelectProject(getCurrentUserId(), project);
+        ContextHolder.setCurrentProject(project);
+        return RestResultGenerator.genResult("success");
+    }
+
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public PageBean<ProjectVo> list() {
@@ -86,5 +103,10 @@ public class ProjectController extends BaseController {
     @RequestMapping(value = "/toProjectList", method = RequestMethod.GET)
     public String toProjectList() {
         return null;
+    }
+
+    @RequestMapping(value = "/selectProject")
+    public String toSelectProjectPage() {
+        return "SelectProject";
     }
 }

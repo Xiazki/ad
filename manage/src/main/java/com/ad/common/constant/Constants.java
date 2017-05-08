@@ -17,4 +17,7 @@ public class Constants {
     public static final String DEFAULT_MATERIAL_NAME = "默认名称";
     public static final String DEFAULT_GIFT_NAME = "默认名称";
 
+    public static final String USERPROJECTSESSIONKEY = "user_projects";
+    public static final String USER_SELECT_SESSION_KEY = "user_select_project";
+
 }

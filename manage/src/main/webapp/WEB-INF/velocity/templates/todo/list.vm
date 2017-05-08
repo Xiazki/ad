@@ -1,0 +1,130 @@
+<div class="page-fixed-main-content">
+    <div class="row">
+        <div class="col-lg-12 col-xs-12 col-sm-12">
+            <div class="portlet light bordered">
+                <div class="portlet-title tabbable-line">
+                    <div class="caption">
+                        <i class="icon-bubbles font-dark hide"></i>
+                        <span class="caption-subject font-dark bold uppercase">待办列表</span>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn-sm btn-circle blue sbold" data-toggle="modal" href="#basic">
+                            <i class="fa fa-wrench"></i> 创建 </a>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#portlet_comments_1" data-toggle="tab" aria-expanded="true"> 未完成 </a>
+                        </li>
+                        <li class="">
+                            <a href="#portlet_comments_2" data-toggle="tab" aria-expanded="false"> 已完成 </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portlet-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="portlet_comments_1">
+                            <!-- BEGIN: Comments -->
+                            <div class="mt-comments">
+                                #foreach($!vo in $!vos)
+                                    #if($!vo.status == 1)
+                                        <div class="mt-comment">
+                                            <div class="mt-comment-body">
+                                                <div class="mt-comment-info">
+                                                    <span class="mt-comment-author">$!vo.title</span>
+                                                    <span class="mt-comment-date">$!vo.createTime</span>
+                                                </div>
+                                                <div class="mt-comment-text"> $!vo.content
+                                                </div>
+                                                <div class="mt-comment-details">
+                                                    <span class="mt-comment-status mt-comment-status-pending">待办</span>
+                                                    <ul class="mt-comment-actions">
+                                                        <li>
+                                                            <a href="javascript:;" class="todo-complete" id="complete_$!vo.id">完成</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;" class="todo-delete" id="delete_$!vo.id">删除</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    #end
+                                #end
+                            </div>
+                            <!-- END: Comments -->
+                        </div>
+                        <div class="tab-pane" id="portlet_comments_2">
+                            <!-- BEGIN: Comments -->
+                            <div class="mt-comments">
+                                #foreach($!vo in $!vos)
+                                    #if($!vo.status == 2)
+                                        <div class="mt-comment">
+                                            <div class="mt-comment-body">
+                                                <div class="mt-comment-info">
+                                                    <span class="mt-comment-author">$!vo.title</span>
+                                                    <span class="mt-comment-date">$!vo.createTime</span>
+                                                </div>
+                                                <div class="mt-comment-text"> $!vo.content
+                                                </div>
+                                                <div class="mt-comment-details">
+                                                    <span class="mt-comment-status mt-comment-status-pending">已经完成</span>
+                                                    <ul class="mt-comment-actions">
+                                                        <li>
+                                                            <a href="javascript:;" class="todo-delete" id="delete_$!vo.id">删除</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    #end
+                                #end
+                            </div>
+                            <!-- END: Comments -->
+                        </div>
+                    </div>
+                    <div class="modal fade" id="basic" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-hidden="true"></button>
+                                    <h4 class="modal-title">创建待办</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label>标题</label>
+                                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                <input type="text" class="form-control" id="title"
+                                                       placeholder="标题" value=""></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>内容</label>
+                                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                                <input type="text" class="form-control" id="content"
+                                                       placeholder="内容" value=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                                    <button type="button" id="submit" class="btn green">保存</button>
+                                </div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/pages/js/ui-modals.js" type="text/javascript"></script>
+<script src="/static/pages/js/todo/addToDo.js" type="text/javascript"></script>

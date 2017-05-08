@@ -1,10 +1,13 @@
 package com.ad.auth;
 
+import com.ad.biz.ProjectUserBiz;
+import com.ad.common.constant.Constants;
 import com.ad.ds.UserService;
 import com.ad.entity.Permission;
 import com.ad.entity.Role;
 import com.ad.entity.User;
 import com.ad.vo.PrincipalVo;
+import com.ad.vo.project.ProjectUserVo;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.DefaultPasswordService;
@@ -18,6 +21,7 @@ import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -28,6 +32,9 @@ public class ShiroAuth extends AuthorizingRealm {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private ProjectUserBiz projectUserBiz;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
@@ -40,6 +47,7 @@ public class ShiroAuth extends AuthorizingRealm {
         //当前登陆用户权限
         Set<String> permissions = currentUser.getPermissions().stream().map(Permission::getPermissionName).collect(Collectors.toSet());
         simpleAuthorizationInfo.setStringPermissions(permissions);
+
         return simpleAuthorizationInfo;
     }
 
@@ -52,7 +60,9 @@ public class ShiroAuth extends AuthorizingRealm {
         //加密
         PasswordService svc = new DefaultPasswordService();
         User user = userService.getUserByName(username);
-        if (user != null && svc.passwordsMatch(password,user.getPassword())) {
+        if (user != null && svc.passwordsMatch(password, user.getPassword())) {
+            List<ProjectUserVo> vos = projectUserBiz.listProjectUserByUserId(user.getId());
+            setSession(Constants.USERPROJECTSESSIONKEY, vos);
             return new SimpleAuthenticationInfo(PrincipalVo.from(user), token.getPassword(), getName());
         }
         return null;

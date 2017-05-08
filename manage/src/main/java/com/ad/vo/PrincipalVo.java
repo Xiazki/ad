@@ -1,6 +1,9 @@
 package com.ad.vo;
 
 import com.ad.entity.User;
+import com.ad.entity.project.Project;
+
+import java.util.List;
 
 /**
  * Created by xiang on 2017/4/11.

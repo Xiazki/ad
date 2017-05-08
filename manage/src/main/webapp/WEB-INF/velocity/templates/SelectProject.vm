@@ -1,4 +1,4 @@
-<!doctype html>
+#set($layout = "layout/empty.vm")
 <html>
 <head>
     <meta charset="utf-8"/>
@@ -49,30 +49,43 @@
     <script src="/static/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
     <script src="/static/plugins/jquery-ui.min.js" type="text/javascript"></script>
 </head>
-
-<body class="">
-    #parse('/layout/header.vm')
-
+<body>
 <div class="container-fluid">
-    <div class="page-content page-content-popup">
-        #parse('/layout/sidebar.vm')
-
-        $screen_content
-
-        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-        <button type="button" class="quick-sidebar-toggler" data-toggle="collapse">
-            <span class="sr-only">Toggle Quick Sidebar</span>
-            <i class="icon-logout"></i>
-            <div class="quick-sidebar-notification">
-                <span class="badge badge-danger">7</span>
+    <div class="page-fixed-main-content">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12">
+                <div class="portlet light portlet-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="icon-microphone font-dark hide"></i>
+                            <span class="caption-subject bold font-dark uppercase"> 选择一个项目开始你的工作吧 </span>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="row">
+                            #foreach($!vo in $!user_projects)
+                                <div class="col-md-4">
+                                    <div class="mt-widget-3">
+                                        <div class="mt-head bg-blue-hoki">
+                                            <div class="mt-head-desc"> $!vo.projectName</div>
+                                            <span class="mt-head-date"> $!vo.createTime </span>
+                                            <div class="mt-head-button">
+                                                <button type="button"
+                                                        class="btn btn-circle btn-outline white btn-sm select-but"
+                                                        id="select_$!vo.id">选择
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            #end
+                        </div>
+                    </div>
+                </div>
             </div>
-        </button>
-        <!-- END QUICK SIDEBAR TOGGLER -->
-
+        </div>
     </div>
 </div>
-##    #parse('/layout/chat.vm')
-
+<script src="/static/pages/js/selectProject.js" type="text/javascript"></script>
 </body>
-
 </html>

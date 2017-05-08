@@ -1,8 +1,10 @@
 package com.ad.controller;
 
+import com.ad.common.ContextHolder;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
 import com.ad.ds.exception.ParamException;
+import com.ad.entity.project.Project;
 import com.ad.vo.PrincipalVo;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -34,6 +36,10 @@ public class BaseController {
         } else {
             model.addAttribute("active", "home");
         }
+        Project project = ContextHolder.getCurrentProject();
+        if (project != null) {
+            model.addAttribute("selectProject", project);
+        }
     }
 
     @ExceptionHandler(ParamException.class)
@@ -52,6 +58,7 @@ public class BaseController {
 
     /**
      * 得到当前用户
+     *
      * @return
      */
     protected PrincipalVo getPrincipalVo() {
@@ -61,6 +68,7 @@ public class BaseController {
 
     /**
      * 得到当前登陆用户ID
+     *
      * @return
      */
     protected Long getCurrentUserId() {
