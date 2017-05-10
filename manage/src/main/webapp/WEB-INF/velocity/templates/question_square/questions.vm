@@ -1,0 +1,132 @@
+<div class="page-fixed-main-content">
+    <div class="search-page search-content-1">
+        <div class="search-bar bordered">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                                        <span class="input-group-btn">
+                                            <button class="btn blue uppercase bold" type="button">Search</button>
+                                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search-container bordered">
+                    <ul>
+                        <li class="search-item clearfix">
+                            <a href="javascriptt:;">
+                                <img src="../assets/pages/img/page_general_search/01.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">Metronic Search Results</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/1.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">Lorem ipsum dolor</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/02.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">sit amet</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/2.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">consectetur adipiscing</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/03.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">Donec efficitur</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/05.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">mauris quam</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                        <li class="search-item clearfix">
+                            <a href="javascript:;">
+                                <img src="../assets/pages/img/page_general_search/5.jpg">
+                            </a>
+                            <div class="search-content">
+                                <h2 class="search-title">
+                                    <a href="javascript:;">volutpat nunc</a>
+                                </h2>
+                                <p class="search-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    efficitur pellentesque auctor. Morbi lobortis, leo in tristique scelerisque, mauris
+                                    quam volutpat nunc </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="search-pagination">
+                        <ul class="pagination">
+                            <li class="page-active">
+                                <a href="javascriptt:;"> 1 </a>
+                            </li>
+                            <li>
+                                <a href="javascriptt:;"> 2 </a>
+                            </li>
+                            <li>
+                                <a href="javascriptt:;"> 3 </a>
+                            </li>
+                            <li>
+                                <a href="javascriptt:;"> 4 </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/pages/js/question_square/search.js" type="text/javascript"></script>

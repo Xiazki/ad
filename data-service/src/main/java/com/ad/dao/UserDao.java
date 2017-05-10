@@ -28,4 +28,5 @@ public class UserDao extends BaseDao<User> {
         query.setMaxResults(length);
         return query.list();
     }
+
 }

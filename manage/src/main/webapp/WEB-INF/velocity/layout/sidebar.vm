@@ -3,7 +3,7 @@
     <div class="page-sidebar navbar-collapse collapse">
         <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true"
             data-slide-speed="200">
-            <li class="nav-item start #if($!active == "project") active open #end">
+            <li class="nav-item start #if($!active == "project" || $!active == "question") active open #end">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-home"></i>
                     <span class="title">我的</span>
@@ -18,8 +18,8 @@
                             <span class="selected"></span>
                         </a>
                     </li>
-                    <li class="nav-item start ">
-                        <a href="dashboard_2.html" class="nav-link ">
+                    <li class="nav-item start #if($!active == "question") active open #end">
+                        <a href="/question" class="nav-link ">
                             <i class="icon-bulb"></i>
                             <span class="title">问题</span>
                             <span class="badge badge-success">1</span>
@@ -40,8 +40,8 @@
                     <span class="title">成员</span>
                 </a>
             </li>
-            <li class="nav-item start ">
-                <a href="dashboard_2.html" class="nav-link ">
+            <li class="nav-item start #if($!active == "task") active open #end">
+                <a href="/task" class="nav-link ">
                     <i class="icon-target"></i>
                     <span class="title">任务</span>
                 </a>
@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li class="nav-item start ">
-                <a href="dashboard_2.html" class="nav-link ">
+                <a href="/questionSquare" class="nav-link ">
                     <i class="icon-bulb"></i>
                     <span class="title">问题广场</span>
                 </a>

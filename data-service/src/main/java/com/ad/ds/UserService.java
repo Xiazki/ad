@@ -80,4 +80,5 @@ public class UserService {
     public Integer count() {
         return userDao.count();
     }
+
 }
