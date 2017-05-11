@@ -1,4 +1,4 @@
-package com.ad.common;
+package com.ad.ds.constant;
 
 /**
  * Created by xiang on 2017/5/10.

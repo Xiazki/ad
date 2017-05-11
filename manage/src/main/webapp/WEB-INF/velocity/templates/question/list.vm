@@ -52,6 +52,7 @@
                         <thead>
                         <tr class="uppercase">
                             <th> 问题标题</th>
+                            <th> 负责人</th>
                             <th> 问题状态</th>
                             <th> 优先级</th>
                             <th> 操作</th>

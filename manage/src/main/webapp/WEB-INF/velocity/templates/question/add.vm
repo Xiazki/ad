@@ -10,7 +10,7 @@
                         #else
                             <span class="caption-subject bold uppercase"> 编辑这个问题  </span>
                         #end
-                        <input id="id" type="hidden" value="$!id"/>
+                        <input id="id" type="hidden" value="$!vo.id"/>
                     </div>
                 </div>
                 <div class="portlet-body form">
@@ -23,14 +23,14 @@
                                                         <i class="fa fa-file-text"></i>
                                                     </span>
                                     <input type="text" class="form-control" id="title"
-                                           placeholder="" value=""></div>
+                                           placeholder="" value="$!vo.title"></div>
                             </div>
                             <div class="form-group">
                                 <label>指派给</label>
                                 <div class="input-group">
 
                                     <select class="form-control select2" id="select_users" style="width: 50%">
-
+                                        #if($!vo.principalId)<option value="$!vo.principalId" selected>$!vo.principalName</option> #end
                                     </select>
                                 </div>
                             </div>
@@ -38,9 +38,9 @@
                                 <label>优先级</label>
                                 <div class="input-group">
                                     <select class="form-control select2" id="priority" style="width: 50%">
-                                        <option value="1">高</option>
-                                        <option value="2">中</option>
-                                        <option value="1">低</option>
+                                        <option value="1" #if($!vo.priority ==1) selected#end>高</option>
+                                        <option value="2" #if($!vo.priority ==2) selected#end>中</option>
+                                        <option value="1" #if($!vo.priority ==3) selected#end>低</option>
                                     </select>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                 <label>问题描述详情</label>
                                 <div class="input-group">
                                     <div style="height: 400px" id="question_editor">
-
+                                        $!vo.questionDesc
                                     </div>
                                 </div>
                             </div>

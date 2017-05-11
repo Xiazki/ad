@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by xiang on 2017/5/10.
  */
@@ -14,10 +16,21 @@ import org.springframework.transaction.annotation.Transactional;
 public class QuestionService {
 
     @Autowired
-    private QuestionDao quetionDao;
+    private QuestionDao questionDao;
 
     public void saveOrUpdate(Question question) {
-        quetionDao.update(question);
+        questionDao.update(question);
     }
 
+    public List<Question> listByPrincipal(Long userId, Long projectId, Integer type, Integer start, Integer length, String searchInfo) {
+        return questionDao.listBuPrincipalId(userId, projectId, type, start, length, searchInfo);
+    }
+
+    public Integer countByPrincipal(Long userId, Long projectId, Integer type, Integer start, Integer length, String searchInfo) {
+        return questionDao.countByPrincipalId(userId, projectId, type, start, length, searchInfo);
+    }
+
+    public Question getById(Long id) {
+        return questionDao.get(id);
+    }
 }

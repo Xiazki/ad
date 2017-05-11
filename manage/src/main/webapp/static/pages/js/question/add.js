@@ -67,6 +67,7 @@ var AddQuestion = function () {
                 type: 'post',
                 dataType: 'JSON',
                 data: {
+                    id: $("#id").val() == "" ? 0 : $("#id").val(),
                     title: $("#title").val(),
                     principalId: $("#select_users").val(),
                     priority: $("#priority").val(),

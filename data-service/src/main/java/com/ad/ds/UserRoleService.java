@@ -34,4 +34,5 @@ public class UserRoleService {
     public Role getByUserId(Long userId) {
         return userRoleDao.getByUserId(userId);
     }
+
 }
