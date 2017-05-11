@@ -5,9 +5,4 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <import resource="spring-beans.xml"/>
-    <import resource="spring-shiro.xml"/>
-    <import resource="spring-web.xml"/>
-    <import resource="data-service.xml"/>
-    <import resource="spring-worker.xml"/>
 </beans>

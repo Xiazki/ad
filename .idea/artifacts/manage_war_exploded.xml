@@ -34,6 +34,9 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.1.RELEASE" />
           <element id="library" level="project" name="Maven: redis.clients:jedis:2.8.1" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.4.2" />
+          <element id="archive" name="com.ad.worker-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="worker" />
+          </element>
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.3.0" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.3.0" />
