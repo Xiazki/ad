@@ -1,0 +1,197 @@
+<div class="page-fixed-main-content">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="portlet light portlet-fit bordered">
+                <div class="portlet-title">
+                    <input type="hidden" id="id" value="$!vo.id">
+                    <div class="caption">
+                        <i class="icon-book-open font-green"></i>
+                        <span class="caption-subject bold font-green uppercase"> $!vo.title </span>
+                        <span class="caption-helper">$!vo.creatorName 创建于 $!vo.createTime</span>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group">
+                            <a class="btn dark btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown"
+                               data-hover="dropdown" data-close-others="true" aria-expanded="false"> 操作
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                #if(!$!isCreator)
+                                    #if($!vo.status !=2 || $!vo.status!=3)
+                                        <li>
+                                            <a href="javascript:;" class="deal" id="solve_2"> 解决</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="deal" id="abandon_1">不处理</a>
+                                        </li>
+                                    #end
+                                #else
+                                    <li>
+                                        <a href="javascript:;" class="deal" id="reopen_4">重新打开</a>
+                                    </li>
+                                    #if($!vo.status !=2 || $!vo.status!=3)
+                                        <li>
+                                            <a href="javascript:;" class="deal" id="reopen_3">解决</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="deal" id="close_1">关闭</a>
+                                        </li>
+                                    #end
+                                #end
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="javascript:;" id="set_public">发布到问题广场</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" id="transfer">转让</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div id="question_detail">
+                        $!vo.questionDesc
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="basic" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"></button>
+                        <h4 class="modal-title">添加描述</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-body">
+                            <input type="hidden" id="status" value="">
+                            <div class="form-group">
+                                <label>内容</label>
+                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                    <input type="text" class="form-control" id="content"
+                                           placeholder="内容" value=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                        <button type="button" id="submit" class="btn green">保存</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade" id="public" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"></button>
+                        <h4 class="modal-title">发布到问题广场</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label>标题</label>
+                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                    <input type="text" class="form-control" id="public_title"
+                                           placeholder="标题" value=""></div>
+                            </div>
+                            <div class="form-group">
+                                <label>内容</label>
+                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-file-text"></i>
+                                                    </span>
+                                    <input type="text" class="form-control" id="public_content"
+                                           placeholder="内容" value=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                        <button type="button" id="public_submit" class="btn green">保存</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <div class="col-md-6">
+            <div class="portlet light portlet-fit bg-inverse ">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="icon-microphone font-red"></i>
+                        <span class="caption-subject bold font-red uppercase"> 问题处理动态 </span>
+                    </div>
+                </div>
+                <div class="portlet-body">
+                    <div class="timeline  white-bg ">
+                        <!-- TIMELINE ITEM -->
+                        #foreach($!p in $!ps)
+                            <div class="timeline-item">
+                                <div class="timeline-badge">
+                                    <div class="timeline-icon">
+                                        #if($!p.entityType == 3)
+                                            <i class="icon-user-following font-green-haze"></i>
+                                        #elseif($!p.entityType == 1)
+                                            <i class="icon-close font-red-intense"></i>
+                                        #elseif($!p.entityType == 2)
+                                            <i class="icon-doc font-red-intense"></i>
+                                        #elseif($!p.entityType == 0)
+                                            <i class="icon-book-open font-purple-seance"></i>
+                                        #elseif($!p.entityType == 4)
+                                            <i class="icon-docs font-blue"></i>
+                                        #elseif($!p.entityType == 5)
+                                            <i class="icon-bag font-grey"></i>
+                                        #end
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <div class="timeline-body-arrow"></div>
+                                    <div class="timeline-body-head">
+                                        <div class="timeline-body-head-caption">
+                                            <span class="timeline-body-alerttitle font-green-haze">
+                                                $!p.userName
+                                                #if($!p.entityType == 3)
+                                                    将这个问题置为解决
+                                                #elseif($!p.entityType == 0)
+                                                    打开了这个问题
+                                                #elseif($!p.entityType == 1)
+                                                    关闭了这个问题
+                                                #elseif($!p.entityType == 2)
+                                                    解决这个问题，等待验证
+                                                #elseif($!p.entityType == 4)
+                                                    重新打开了这个问题
+                                                #elseif($!p.entityType == 5)
+                                                    重新编辑了这个问题
+                                                #end
+                                            </span>
+                                            <span class="timeline-body-time font-grey-cascade"> 于 $!p.createTime</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-body-content">
+                                        <span class="font-grey-cascade">$!p.event</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END TIMELINE ITEM -->
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/pages/js/ui-modals.js" type="text/javascript"></script>
+<script src="/static/pages/js/question/detail.js" type="text/javascript"></script>

@@ -31,7 +31,12 @@ public class SelectProjectInterceptor implements HandlerInterceptor {
             return true;
         }
         for (String url : excludedUrls) {
-            if (requestUri.endsWith(url)) {
+            //过滤掉请求参数
+//            String verifyUrl = requestUri.split("\\?")[0];
+//            if (verifyUrl.contains(";")) {
+//                verifyUrl = verifyUrl.split(";")[0];
+//            }
+            if (requestUri.contains(url)) {
                 return true;
             }
         }

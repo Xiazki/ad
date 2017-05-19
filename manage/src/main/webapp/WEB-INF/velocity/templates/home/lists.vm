@@ -1,3 +1,174 @@
 <div class="page-fixed-main-content">
-list
+    <!-- BEGIN PAGE BASE CONTENT -->
+    <div class="portlet light bordered">
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="icon-bubble font-green-sharp"></i>
+                <span class="caption-subject font-green-sharp sbold">总览</span>
+            </div>
+            <div class="actions">
+                <div class="btn-group">
+                    <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 操作
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="javascript:;"> Option 1</a>
+                        </li>
+                        <li class="divider"> </li>
+                        <li>
+                            <a href="javascript:;">Option 2</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Option 3</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Option 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div class="tiles">
+                <div class="tile double-down bg-blue-hoki">
+                    <div class="tile-body">
+                        <i class="fa fa-bell-o"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 消息通知 </div>
+                        <div class="number"> 6 </div>
+                    </div>
+                </div>
+                <div class="tile bg-red-sunglo">
+                    <div class="tile-body">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 个人待办 </div>
+                        <div class="number"> 12 </div>
+                    </div>
+                </div>
+                <div class="tile double selected bg-green-turquoise">
+                    <div class="corner"> </div>
+                    <div class="check"> </div>
+                    <div class="tile-body">
+                        <h4>申请项目</h4>
+                        <p> 向相关项目管理员申请加入项目 </p>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="number">  </div>
+                    </div>
+                </div>
+                <div class="tile selected bg-yellow-saffron">
+                    <div class="corner"> </div>
+                    <div class="tile-body">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 成员 </div>
+                        <div class="number"> 5 </div>
+                    </div>
+                </div>
+                <div class="tile bg-purple-studio">
+                    <div class="tile-body">
+                        <i class="fa fa-question"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 我的问题 </div>
+                        <div class="number"> 121 </div>
+                    </div>
+                </div>
+                <div class="tile bg-green-meadow">
+                    <div class="tile-body">
+                        <i class="fa fa-comments"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 聊天室 </div>
+                        <div class="number"> 12 </div>
+                    </div>
+                </div>
+                <div class="tile double bg-grey-cascade">
+                    <div class="tile-body">
+                       <i class="fa fa-file-text"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name">
+                        </div>
+                        <div class="number">  </div>
+                    </div>
+                </div>
+                <div class="tile bg-red-intense">
+                    <div class="tile-body">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 我发起的问题 </div>
+                        <div class="number"> 12 </div>
+                    </div>
+                </div>
+                <div class="tile bg-green">
+                    <div class="tile-body">
+                        <i class="fa fa-bar-chart-o"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 统计 </div>
+                        <div class="number"> </div>
+                    </div>
+                </div>
+                <div class="tile bg-blue-steel">
+                    <div class="tile-body">
+                        <i class="fa fa-tasks"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 开发任务 </div>
+                        <div class="number"> 124 </div>
+                    </div>
+                </div>
+                <div class="tile double bg-grey-cascade">
+                    <div class="tile-body">
+                        <i class="fa fa-question-circle"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name">
+                            问题广场
+                        </div>
+                        <div class="number">123  </div>
+                    </div>
+                </div>
+##                <div class="tile image double selected">
+##                    <div class="tile-body">
+##                    <i class="fa fa-question"></i>
+##                    </div>
+##                    <div class="tile-object">
+##                        <div class="name"> 问题广场 </div>
+##                        <div class="number"> 124 </div>
+##                    </div>
+##                </div>
+                <div class="tile bg-yellow-lemon selected">
+                    <div class="corner"> </div>
+                    <div class="check"> </div>
+                    <div class="tile-body">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 个人设置 </div>
+                    </div>
+                </div>
+                <div class="tile bg-red-sunglo">
+                    <div class="tile-body">
+                        <i class="fa fa-table"></i>
+                    </div>
+                    <div class="tile-object">
+                        <div class="name"> 项目 </div>
+                        <div class="number"> 4 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE BASE CONTENT -->
 </div>

@@ -9,7 +9,7 @@ var User = function () {
     var initUserList = function () {
         var table = $("#user-list").DataTable({
             ordering: false,
-            searching: false,
+            searching: true,
             "scrollX": false,
             "stateSave": true,
             "processing": true,

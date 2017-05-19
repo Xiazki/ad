@@ -6,11 +6,11 @@
     <div class="row bs-reset">
         <div class="col-md-6 bs-reset mt-login-5-bsfix">
             <div class="login-bg" style="background-image:url(/static/pages/img/login/bg1.jpg)">
-                <img class="login-logo" src="/static/pages/img/login/logo.png" /> </div>
+            </div>
         </div>
         <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
             <div class="login-content">
-                <h1 class="font-blue">欢迎使用自动化部署Web平台</h1>
+                <h1 class="font-blue">欢迎使用项目部署与协作Web平台</h1>
                 <p> 请登录. </p>
                 <form action="javascript:;" class="login-form" method="post">
                     <div class="alert alert-danger display-hide">
@@ -26,15 +26,15 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="rem-password">
-                                <label class="rememberme mt-checkbox mt-checkbox-outline">
-                                    <input type="checkbox" name="remember" value="1" /> Remember me
-                                    <span></span>
-                                </label>
+##                                <label class="rememberme mt-checkbox mt-checkbox-outline">
+##                                    <input type="checkbox" name="remember" value="1" /> Remember me
+##                                    <span></span>
+##                                </label>
                             </div>
                         </div>
                         <div class="col-sm-8 text-right">
                             <div class="forgot-password">
-                                <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+##                                <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
                             </div>
                             <button class="btn green" type="submit">登 陆</button>
                         </div>

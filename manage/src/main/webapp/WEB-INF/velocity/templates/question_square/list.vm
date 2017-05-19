@@ -1,0 +1,32 @@
+#set($layout = "layout/empty.vm")
+<div class="search-container bordered">
+    <ul>
+        #foreach($!vo in $!page.data)
+            <li class="search-item clearfix">
+                #if($!vo.file)
+                    <a href="javascriptt:;">
+                        <img src="$!vo.file">
+                    </a>
+                #end
+                <div class="search-content">
+                    <h2 class="search-title">
+                        <a href="javascript:;">$!vo.publicTitle</a>
+                    </h2>
+                    <p class="search-desc"> $!vo.publicDesc </p>
+                </div>
+            </li>
+        #end
+    </ul>
+    <div class="search-pagination">
+        <ul class="pagination">
+            #set($!i = $!page.recordsTotal)
+            #set($!current = $!page.draw)
+            #set($!arr = [0..$!i])
+            #foreach($p in $!arr)
+                <li class="#if($!p == $!current)page-active #end">
+                    <a href="javascriptt:;"> $p </a>
+                </li>
+            #end
+        </ul>
+    </div>
+</div>

@@ -49,7 +49,7 @@
                                                         <i class="fa fa-file-text"></i>
                                                     </span>
                                     <input type="text" class="form-control" id="permissionName"
-                                           placeholder="用户名" value="$!permission.permissionName"></div>
+                                           placeholder="权限名称" value="$!permission.permissionName"></div>
                             </div>
                             <div class="form-group">
                                 <label>权限描述*</label>
@@ -58,7 +58,7 @@
                                                         <i class="fa fa-file-text"></i>
                                                     </span>
                                     <input type="text" class="form-control" id="permissionDesc"
-                                           placeholder="用户名" value="$!permission.permissionDesc"></div>
+                                           placeholder="权限描述" value="$!permission.permissionDesc"></div>
                             </div>
                         </div>
 

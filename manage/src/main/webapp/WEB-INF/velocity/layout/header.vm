@@ -5,7 +5,7 @@
             <div class="havbar-header">
                 <!-- BEGIN LOGO -->
                 <a id="index" class="navbar-brand" href="start.html">
-                    <img src="/static/metronic/img/logo.png" alt="Logo"> </a>
+                </a>
                 <!-- END LOGO -->
                 <!-- BEGIN TOPBAR ACTIONS -->
                 <div class="topbar-actions">

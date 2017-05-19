@@ -37,6 +37,15 @@ public class Question extends BaseEntity<Long> {
     @Column(name = "type")
     private Integer type;
 
+    @Column(name = "public_desc")
+    public String publicDesc;
+
+    @Column(name = "public_title")
+    public String publicTitle;
+
+    @Column(name = "file")
+    private String file;
+
     @Column(name = "is_star")
     private boolean star;
 
@@ -110,5 +119,29 @@ public class Question extends BaseEntity<Long> {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
+
+    public String getPublicDesc() {
+        return publicDesc;
+    }
+
+    public void setPublicDesc(String publicDesc) {
+        this.publicDesc = publicDesc;
+    }
+
+    public String getPublicTitle() {
+        return publicTitle;
+    }
+
+    public void setPublicTitle(String publicTitle) {
+        this.publicTitle = publicTitle;
     }
 }

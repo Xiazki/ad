@@ -4,7 +4,7 @@ package com.ad.ds.constant;
  * Created by xiang on 2017/5/10.
  */
 public enum QuestionStatus {
-    OPEN(0, "打开"), CLOSE(1, "关闭"), SOLVE(3, "解决"), REOPEN(4, "重新打开");
+    OPEN(0, "打开"), CLOSE(1, "关闭"),VERIFY(2,"验证"), SOLVE(3, "解决"), REOPEN(4, "重新打开"),REEDIT(5,"重新编辑");
 
     private Integer status;
     private String text;

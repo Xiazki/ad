@@ -9,6 +9,7 @@ import com.ad.controller.BaseController;
 import com.ad.ds.question.QuestionService;
 import com.ad.entity.project.Project;
 import com.ad.entity.question.Question;
+import com.ad.vo.question.QuestionProcessVo;
 import com.ad.vo.question.QuestionVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -70,5 +71,49 @@ public class QuestionController extends BaseController {
         Project project = ContextHolder.getCurrentProject();
         questionBiz.saveQuestion(questionVo, getCurrentUserId(), project.getId());
         return RestResultGenerator.genResult("成功");
+    }
+
+    @RequestMapping(value = "detail/{id}")
+    public String toDetail(@PathVariable(value = "id") Long id, @RequestParam(name = "type") boolean type, Model model) {
+        model.addAttribute("isCreator", type);
+        QuestionVo questionVo = questionBiz.getById(id);
+        //问题处理时间线
+        List<QuestionProcessVo> ps = questionBiz.listQuestionProcess(id);
+        model.addAttribute("vo", questionVo);
+        model.addAttribute("ps", ps);
+        return "question/detail";
+    }
+
+    @RequestMapping(value = "deal/{id}")
+    @ResponseBody
+    public ResponseResult updateQuestionStatus(@PathVariable(value = "id") Long id,
+                                               @RequestParam(name = "status") Integer status, @RequestParam(name = "event") String event) {
+        questionBiz.updateQuestionStatus(id, getCurrentUserId(), status, event);
+        return RestResultGenerator.genResult("处理成功!");
+    }
+
+    @RequestMapping(value = "needVerify/list")
+    @ResponseBody
+    public PageBean<QuestionVo> listNeedVerifyQuestion(@RequestParam(name = "start") Integer start,
+                                                       @RequestParam(name = "length") Integer length,
+                                                       @RequestParam(name = "draw") Integer draw,
+                                                       @RequestParam(name = "search[value]") String searchInfo) {
+        Project project = ContextHolder.getCurrentProject();
+        PageBean<QuestionVo> pageBean = new PageBean<>();
+        List<QuestionVo> vos = questionBiz.listNeedVerify(getCurrentUserId(), project.getId(), start, length, searchInfo);
+        Integer count = questionBiz.countNeedVerify(getCurrentUserId(), project.getId(), searchInfo);
+        pageBean.setData(vos);
+        pageBean.setRecordsTotal(count);
+        pageBean.setRecordsFiltered(count);
+        return pageBean;
+    }
+
+    @RequestMapping("/toPublic/{id}")
+    @ResponseBody
+    public ResponseResult setQuestionToPublic(@PathVariable(value = "id") Long id,
+                                              @RequestParam(name = "title") String title,
+                                              @RequestParam(name = "content") String content) {
+        questionBiz.setQuestionToPublic(id, title, content);
+        return RestResultGenerator.genResult("success");
     }
 }

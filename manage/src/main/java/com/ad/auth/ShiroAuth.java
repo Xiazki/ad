@@ -60,6 +60,7 @@ public class ShiroAuth extends AuthorizingRealm {
         //加密
         PasswordService svc = new DefaultPasswordService();
         User user = userService.getUserByName(username);
+        //密码匹配
         if (user != null && svc.passwordsMatch(password, user.getPassword())) {
             List<ProjectUserVo> vos = projectUserBiz.listProjectUserByUserId(user.getId());
             setSession(Constants.USERPROJECTSESSIONKEY, vos);

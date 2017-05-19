@@ -1,6 +1,8 @@
 package com.ad.vo.question;
 
+import com.ad.common.constant.Constants;
 import com.ad.entity.question.Question;
+import org.joda.time.DateTime;
 import org.springframework.beans.BeanUtils;
 
 /**
@@ -16,9 +18,13 @@ public class QuestionVo {
     private Integer status;
     private Integer type;
     private boolean star;
+    private String file;
+    private String publicTitle;
+    private String publicDesc;
     private Long creatorId;
     private String creatorName;
     private String principalName;
+    private String createTime;
 
     public static QuestionVo from(Question question) {
         if (question == null) {
@@ -27,7 +33,16 @@ public class QuestionVo {
         QuestionVo questionVo = new QuestionVo();
         BeanUtils.copyProperties(question, questionVo);
         questionVo.setId(question.getId());
+        questionVo.setCreatorName(new DateTime(question.getCreateTime()).toString(Constants.DATE_FORMAT));
         return questionVo;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
     }
 
     public String getPrincipalName() {
@@ -116,5 +131,29 @@ public class QuestionVo {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
+
+    public String getPublicDesc() {
+        return publicDesc;
+    }
+
+    public void setPublicDesc(String publicDesc) {
+        this.publicDesc = publicDesc;
+    }
+
+    public String getPublicTitle() {
+        return publicTitle;
+    }
+
+    public void setPublicTitle(String publicTitle) {
+        this.publicTitle = publicTitle;
     }
 }

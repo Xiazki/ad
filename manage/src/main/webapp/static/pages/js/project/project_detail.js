@@ -10,6 +10,10 @@ var Project = function () {
         var $submit = $("#submit");
         $submit.bind('click', function () {
             $('#project-save').submit();
+        });
+        var $subDeploy = $("#sub_deploy");
+        $subDeploy.bind('click',function(){
+            $('#basic').modal('show')
         })
     };
 
