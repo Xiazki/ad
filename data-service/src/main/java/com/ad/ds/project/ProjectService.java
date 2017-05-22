@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by xiang on 2017/5/1.
  */
@@ -20,7 +22,16 @@ public class ProjectService {
         return projectDao.get(id);
     }
 
-    public void saveOrUpdate(Project project){
+    public void saveOrUpdate(Project project) {
         projectDao.update(project);
     }
+
+    public List<Project> listByUserId(Long userId, Integer start, Integer length, String searchInfo) {
+        return projectDao.listByUserId(userId, start, length, searchInfo);
+    }
+
+    public int countByUserId(Long userId, String searchInfo) {
+        return projectDao.countByUserId(userId, searchInfo);
+    }
+
 }

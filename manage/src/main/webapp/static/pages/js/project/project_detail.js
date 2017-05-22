@@ -12,9 +12,45 @@ var Project = function () {
             $('#project-save').submit();
         });
         var $subDeploy = $("#sub_deploy");
-        $subDeploy.bind('click',function(){
+        $subDeploy.bind('click', function () {
             $('#basic').modal('show')
-        })
+        });
+
+        var $over = $("#over");
+        $over.bind('click', function () {
+            $('#basic').modal('hide');
+            $('#log').modal('show');
+            showLog();
+        });
+        var $log_close = $("#log_close");
+        $log_close.bind('click', function () {
+
+        });
+    };
+
+    var closeSocket = function (socket) {
+        socket.close();
+    };
+
+    var showLog = function () {
+
+        $('#log_content').html("");
+
+        var id = $("#id").val();
+        //temp
+        var websocket = new SockJS("/log?projectId=" + id);
+        websocket.onopen = function (event) {
+            console.info("connected!");
+        };
+        websocket.onmessage = function (event) {
+            $('#log_content').append(event.data);
+        };
+        websocket.onerror = function (event) {
+            console.info("error!")
+        };
+        websocket.onclose = function (event) {
+            console.info("closed!");
+        }
     };
 
     var submit = function () {
@@ -116,12 +152,12 @@ var Project = function () {
                 $.ajax({
                     url: "/project/attend_user/list",
                     dataType: 'JSON',
-                    data:{
+                    data: {
                         start: data.start,
                         length: data.length,
                         draw: data.draw,
                         searchInfo: data.search.value,
-                        id:$("#id").val()
+                        id: $("#id").val()
                     },
                     success: function (d) {
                         callback(d);

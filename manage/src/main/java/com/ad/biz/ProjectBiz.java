@@ -6,11 +6,13 @@ import com.ad.ds.project.ProjectService;
 import com.ad.ds.project.ProjectUserService;
 import com.ad.entity.User;
 import com.ad.entity.project.Project;
+import com.ad.vo.PrincipalVo;
 import com.ad.vo.project.ProjectVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by xiang on 2017/4/27.
@@ -33,6 +35,10 @@ public class ProjectBiz {
         User user = userService.get(project.getUserId());
         vo.setUserName(user.getUsername());
         return vo;
+    }
+
+    public List<ProjectVo> listByUserId(Long userId, Integer start, Integer length, String searchInfo) {
+        return null;
     }
 
     public void saveOrUpdate(ProjectVo projectVo) {

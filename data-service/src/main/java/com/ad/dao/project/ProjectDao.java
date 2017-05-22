@@ -19,10 +19,22 @@ public class ProjectDao extends BaseDao<Project> {
      * @param userId
      * @return
      */
-    public List<Project> listByUserId(Long userId) {
-        String hql = "from Project where userId =:userId";
+    public List<Project> listByUserId(Long userId, Integer start, Integer length, String searchInfo) {
+        String hql = "from Project where userId =:userId and projectName like:searchInfo";
         Query query = getSession().createQuery(hql);
         query.setLong("userId", userId);
+        query.setString("searchInfo", "%" + searchInfo + "%");
+        query.setFirstResult(start);
+        query.setMaxResults(length);
         return query.list();
     }
+
+    public int countByUserId(Long userId, String searchInfo) {
+        String hql = "from Project where userId =:userId and projectName like:searchInfo";
+        Query query = getSession().createQuery(hql);
+        query.setLong("userId", userId);
+        query.setString("searchInfo", "%" + searchInfo + "%");
+        return query.list().size();
+    }
+
 }

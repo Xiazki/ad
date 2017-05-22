@@ -82,7 +82,7 @@ var Login = function () {
 
     var submit = function () {
         $.ajax({
-            url: '/lo',
+            url: '/login',
             type: 'POST',
             data: {
                 username: $('#login-username').val(),

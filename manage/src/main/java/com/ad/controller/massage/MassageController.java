@@ -17,4 +17,6 @@ public class MassageController extends BaseController {
     public String toMessagePage() {
         return "messages/lists";
     }
+
+
 }

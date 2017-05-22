@@ -21,6 +21,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by xiang on 2017/4/27.
@@ -96,13 +97,24 @@ public class ProjectController extends BaseController {
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
-    public PageBean<ProjectVo> list() {
-        return null;
+    public PageBean<ProjectVo> list(@RequestParam(name = "start") Integer start,
+                                    @RequestParam(name = "length") Integer length,
+                                    @RequestParam(name = "draw") Integer draw,
+                                    @RequestParam(name = "search[value]") String searchInfo) {
+        PageBean<ProjectVo> pageBean = new PageBean<>();
+        List<Project> projects = projectService.listByUserId(getCurrentUserId(), start, length, searchInfo);
+        int count = projectService.countByUserId(getCurrentUserId(), searchInfo);
+        List<ProjectVo> projectVos = projects.stream().map(ProjectVo::from).collect(Collectors.toList());
+        pageBean.setDraw(draw);
+        pageBean.setData(projectVos);
+        pageBean.setRecordsTotal(count);
+        pageBean.setRecordsFiltered(count);
+        return pageBean;
     }
 
     @RequestMapping(value = "/toProjectList", method = RequestMethod.GET)
     public String toProjectList() {
-        return null;
+        return "project/list";
     }
 
     @RequestMapping(value = "/selectProject")

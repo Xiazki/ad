@@ -19,7 +19,7 @@ import java.util.List;
  * Created by xiang on 2017/4/6.
  */
 @Controller
-@RequestMapping(value = "lo")
+@RequestMapping(value = "login")
 public class LoginController extends BaseController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -49,6 +49,6 @@ public class LoginController extends BaseController {
     public String logout() {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "redirect:lo";
+        return "redirect:login";
     }
 }

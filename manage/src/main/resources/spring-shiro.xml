@@ -24,14 +24,14 @@
 
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <property name="loginUrl" value="/lo"/>
+        <property name="loginUrl" value="/login"/>
         <property name="successUrl" value="/index"/>
         <property name="unauthorizedUrl" value="/auth"/>
         <property name="filterChainDefinitions">
             <value>
                 /static/** = anon
                 /favicon.ico = anon
-                /lo = anon
+                /login = anon
                 /** = authc
             </value>
         </property>

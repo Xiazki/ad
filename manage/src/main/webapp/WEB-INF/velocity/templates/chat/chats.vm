@@ -8,38 +8,28 @@
             <div class="actions">
             </div>
         </div>
+        <input id="uid" type="hidden" value="$!uid">
         <div class="portlet-body" id="chats">
             <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 525px;">
                 <div class="scroller" style="height: 525px; overflow: hidden; width: auto;" data-always-visible="1"
                      data-rail-visible1="1" data-initialized="1">
                     <ul class="chats">
-                        <li class="in">
-                            <img class="avatar" alt="" src="/static/metronic/img/avatars/team1.jpg">
+                        #foreach($!chat in $!chats)
+                            #if($!chat.userId == $!uid)
+                            <li class="out">
+                                <img class="avatar" alt="" src="/static/metronic/img/avatars/team3.jpg">
+                            #else
+                            <li class="in">
+                                <img class="avatar" alt="" src="/static/metronic/img/avatars/team1.jpg">
+                            #end
                             <div class="message">
                                 <span class="arrow"> </span>
-                                <a href="javascript:;" class="name"> Bob</a>
-                                <span class="datetime"> at 20:40 </span>
-                                <span class="body"> 你好</span>
+                                <a href="javascript:;" class="name"> $!chat.userName</a>
+                                <span class="datetime">  $!chat.sendTime </span>
+                                <span class="body"> $!chat.content</span>
                             </div>
                         </li>
-                        <li class="in">
-                            <img class="avatar" alt="" src="/static/metronic/img/avatars/team4.jpg">
-                            <div class="message">
-                                <span class="arrow"> </span>
-                                <a href="javascript:;" class="name"> Richard</a>
-                                <span class="datetime"> at 20:40 </span>
-                                <span class="body"> 123456 </span>
-                            </div>
-                        </li>
-                        <li class="in">
-                            <img class="avatar" alt="" src="/static/metronic/img/avatars/team1.jpg">
-                            <div class="message">
-                                <span class="arrow"> </span>
-                                <a href="javascript:;" class="name"> Bob </a>
-                                <span class="datetime"> at 20:54 </span>
-                                <span class="body"> 。。。。。。</span>
-                            </div>
-                        </li>
+                        #end
                     </ul>
                 </div>
                 <div class="slimScrollBar"

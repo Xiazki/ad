@@ -134,7 +134,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" id="close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
-                        <button type="button" id="submit" class="btn green">保存</button>
+                        <button type="button" id="over" class="btn green">确定覆盖</button>
                     </div>
                 </div>
                 <!-- /.modal-content -->
@@ -142,6 +142,24 @@
             <!-- /.modal-dialog -->
         </div>
 
+        <div class="modal fade" id="log" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"></button>
+                        <h4 class="modal-title" id="llg_title">启动日志</h4>
+                    </div>
+                    <div class="modal-body" id="log_content">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="log_close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
 
         <div class="col-md-6 ">
             <div class="portlet light bordered">
