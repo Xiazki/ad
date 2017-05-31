@@ -33,4 +33,9 @@
 ## 聊天
 ![Alt text](/img/chat.png)
 
+## 消息日志通知
+![Alt text](/img/message.png)
+
+
+
 
