@@ -1,9 +1,0 @@
-@echo off 正在部署 %1
-echo 正在拉去代码...
-choice /t 5 /d y /n >nul
-echo 正在编译...
-choice /t 5 /d y /n >nul
-echo 开始部署...
-cd /d D:\tomcat\autodtomcat\apache-tomcat-7.0.70-windows-x64\apache-tomcat-7.0.70\bin
-call startup.bat
-echo 部署完成
