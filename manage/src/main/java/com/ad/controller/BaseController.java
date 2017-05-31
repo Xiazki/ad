@@ -4,6 +4,7 @@ import com.ad.common.ContextHolder;
 import com.ad.common.ResponseResult;
 import com.ad.common.RestResultGenerator;
 import com.ad.ds.exception.ParamException;
+import com.ad.entity.User;
 import com.ad.entity.project.Project;
 import com.ad.vo.PrincipalVo;
 import org.apache.shiro.SecurityUtils;
@@ -29,6 +30,7 @@ public class BaseController {
 
     @ModelAttribute
     public void postModel(Model model) {
+
         RequestMapping re = this.getClass().getAnnotation(RequestMapping.class);
         if (re != null) {
             String url[] = re.value();
@@ -40,6 +42,7 @@ public class BaseController {
         if (project != null) {
             model.addAttribute("selectProject", project);
         }
+
     }
 
     @ExceptionHandler(ParamException.class)

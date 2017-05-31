@@ -64,7 +64,7 @@ public class ProjectController extends BaseController {
     @RequestMapping(value = "/save")
     @ResponseBody
     public ResponseResult save(ProjectVo projectVo) {
-        projectBiz.saveOrUpdate(projectVo);
+        projectBiz.saveOrUpdate(projectVo, getCurrentUserId());
         return RestResultGenerator.genResult("保存成功!");
     }
 
@@ -121,4 +121,11 @@ public class ProjectController extends BaseController {
     public String toSelectProjectPage() {
         return "SelectProject";
     }
+
+    @RequestMapping(value = "/addPage", method = RequestMethod.GET)
+    public String toAddProjectPage() {
+
+        return "project/add";
+    }
+
 }

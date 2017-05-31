@@ -1,6 +1,14 @@
 var Detail = function () {
 
     var init = function () {
+
+        var select = $("select");
+        select.select2();
+        select.select2({
+            minimumResultsForSearch: -1
+        });
+
+        initSearchUser();
         initPlugin();
     };
 
@@ -20,6 +28,41 @@ var Detail = function () {
             $('#public').modal('show');
         });
 
+        //var transfer = $('#transfer');
+        //$publicSubmit.bind('click', setQuestionPublic);
+
+        var $transfer = $("#tranform_submit");
+        $transfer.bind('click',transfer);
+
+        $('#transfer').bind('click', function () {
+            $('#tranform').modal('show');
+        });
+
+    };
+
+    var transfer = function () {
+        $.ajax({
+            url: '/question/transfer',
+            data: {
+                id: $("#id").val(),
+                userId: $("#select_users").val()
+            },
+            dataType: 'json',
+            success: function (d) {
+                if (d['success']) {
+                    $('#tranform').modal('hide');
+                    window.location.href = '/question';
+                } else {
+                    $('#public').modal('hide');
+                    $.notify(d['message'], {
+                        type: 'danger', animate: {
+                            enter: 'animated fadeInDown',
+                            exit: 'animated fadeOutUp'
+                        }
+                    });
+                }
+            }
+        });
     };
 
     var setQuestionPublic = function () {
@@ -48,6 +91,41 @@ var Detail = function () {
                         }
                     });
                 }
+            }
+        });
+    };
+
+    var initSearchUser = function () {
+        var $selectUser = $("#select_users");
+        $selectUser.select2({
+            ajax: {
+                url: "/search/user",
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    }
+                        ;
+                },
+                processResults: function (data) {
+                    return {
+                        results: data
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 1,
+            templateResult: function (repo) {
+                if (repo.loading) return repo.text;
+                return repo.text;
+            },
+            templateSelection: function (d) {
+                return d.text;
             }
         });
     };

@@ -10,7 +10,7 @@
                     </div>
 
                     <div class="actions">
-                        <a href="/project/add" class="btn btn-sm btn-circle blue">
+                        <a href="/project/addPage" class="btn btn-sm btn-circle blue">
                             <i class="fa fa-wrench"></i> 创建 </a>
                     </div>
                 </div>

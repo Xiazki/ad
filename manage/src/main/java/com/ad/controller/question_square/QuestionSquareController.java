@@ -11,6 +11,7 @@ import com.ad.vo.question.QuestionVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -60,4 +61,12 @@ public class QuestionSquareController extends BaseController {
         model.addAttribute("page", pageBean);
         return "question_square/list";
     }
+
+    @RequestMapping(value = "questions/{id}")
+    public String toDetail(Model model, @PathVariable(value = "id") Long id) {
+        Question question = questionService.getById(id);
+        model.addAttribute("vo", question);
+        return "question_square/deatail";
+    }
+
 }

@@ -81,6 +81,12 @@ public class QuestionBiz {
         return vo;
     }
 
+    public void transferToOther(Long id, Long userId) {
+
+        questionService.transferToOther(id, userId);
+
+    }
+
     public void updateQuestionStatus(Long id, Long userId, Integer status, String event) {
         questionService.updateQuestion(id, userId, status, event);
     }

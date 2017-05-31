@@ -116,4 +116,14 @@ public class QuestionController extends BaseController {
         questionBiz.setQuestionToPublic(id, title, content);
         return RestResultGenerator.genResult("success");
     }
+
+    @RequestMapping("/transfer")
+    @ResponseBody
+    public ResponseResult transferToOther(@RequestParam(name = "id") Long id,
+                                          @RequestParam(name = "userId") Long userId) {
+
+        questionBiz.transferToOther(id,userId);
+        return RestResultGenerator.genResult("success");
+
+    }
 }

@@ -6,6 +6,7 @@ package com.ad.worker;
 public abstract class BaseDaemonWorker implements Runnable{
 
 
+
     protected void startExecute(){
 
     }

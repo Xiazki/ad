@@ -39,9 +39,7 @@
                                         <span class="mt=action-time">2017.5.10 11:20</span>
                                     </div>
                                     <div class="mt-action-buttons ">
-                                        <div class="btn-group btn-group-circle">
-                                            <button type="button" class="btn btn-outline red btn-sm">查看</button>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -66,9 +64,7 @@
                                         <span class="mt=action-time">2017.5.10 10:52</span>
                                     </div>
                                     <div class="mt-action-buttons ">
-                                        <div class="btn-group btn-group-circle">
-                                            <button type="button" class="btn btn-outline red btn-sm">查看</button>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -93,9 +89,7 @@
                                         <span class="mt=action-time">2017.5.10 8:06</span>
                                     </div>
                                     <div class="mt-action-buttons ">
-                                        <div class="btn-group btn-group-circle">
-                                            <button type="button" class="btn btn-outline red btn-sm">查看</button>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -125,10 +119,10 @@
                                         <span class="mt-action-dot bg-green"></span>
                                         <span class="mt=action-time">2017.5.10 11:04</span>
                                     </div>
-                                    <div class="mt-action-buttons ">
+                                    <div class="mt-action-buttons " id="temp1">
                                         <div class="btn-group btn-group-circle">
-                                            <button type="button" class="btn btn-outline green btn-sm">同意</button>
-                                            <button type="button" class="btn btn-outline red btn-sm">拒绝</button>
+                                            <button type="button" onclick="javascript:$('#temp1').html('已经添加')" class="btn btn-outline green btn-sm">同意</button>
+                                            <button type="button" onclick="javascript:$('#temp1').html('已经拒绝')" class="btn btn-outline red btn-sm">拒绝</button>
                                         </div>
                                     </div>
                                 </div>
@@ -154,9 +148,9 @@
                                         <span class="mt=action-time">2017.5.10 9:34</span>
                                     </div>
                                     <div class="mt-action-buttons ">
-                                        <div class="btn-group btn-group-circle">
-                                            <button type="button" class="btn btn-outline green btn-sm">同意</button>
-                                            <button type="button" class="btn btn-outline red btn-sm">拒绝</button>
+                                        <div class="btn-group btn-group-circle" id="temp2">
+                                            <button type="button" onclick="javascript:$('#temp2').html('已经添加')" class="btn btn-outline green btn-sm">同意</button>
+                                            <button type="button" onclick="javascript:$('#temp2').html('已经拒绝')" class="btn btn-outline red btn-sm">拒绝</button>
                                         </div>
                                     </div>
                                 </div>
@@ -167,5 +161,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>

@@ -22,14 +22,25 @@ var Project = function () {
             $('#log').modal('show');
             showLog();
         });
+
+        var $showRrojectLog = $("#showProLog");
+        $showRrojectLog.bind('click',function(){
+            $('#proLog').modal('show');
+        });
+
         var $log_close = $("#log_close");
         $log_close.bind('click', function () {
 
         });
+
     };
 
     var closeSocket = function (socket) {
         socket.close();
+    };
+
+    var showProLog = function (){
+
     };
 
     var showLog = function () {

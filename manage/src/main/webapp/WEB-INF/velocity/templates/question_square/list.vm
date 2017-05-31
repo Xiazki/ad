@@ -10,7 +10,7 @@
                 #end
                 <div class="search-content">
                     <h2 class="search-title">
-                        <a href="javascript:;">$!vo.publicTitle</a>
+                        <a href="/questionSquare/questions/$vo.id">$!vo.publicTitle</a>
                     </h2>
                     <p class="search-desc"> $!vo.publicDesc </p>
                 </div>

@@ -67,12 +67,9 @@
         $screen_content
 
         <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-        <button type="button" class="quick-sidebar-toggler" data-toggle="collapse">
-            <span class="sr-only">Toggle Quick Sidebar</span>
+        <button onclick="javascript:window.location.href='/logout'" class="quick-sidebar-toggler" data-toggle="collapse">
+            <span class="sr-only">登出</span>
             <i class="icon-logout"></i>
-            <div class="quick-sidebar-notification">
-                <span class="badge badge-danger"></span>
-            </div>
         </button>
         <!-- END QUICK SIDEBAR TOGGLER -->
 

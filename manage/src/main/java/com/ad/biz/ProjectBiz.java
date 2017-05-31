@@ -41,7 +41,7 @@ public class ProjectBiz {
         return null;
     }
 
-    public void saveOrUpdate(ProjectVo projectVo) {
+    public void saveOrUpdate(ProjectVo projectVo,Long userId) {
         // TODO: 2017/5/2 项目添加用户
         Project project = new Project();
         if (projectVo.getId() > 0) {
@@ -49,6 +49,7 @@ public class ProjectBiz {
             project.setUpdateTime(new Date().getTime());
             //TODO 判断当前项目状态，发送相关状态的事件并保存状态
         } else {
+            project.setUserId(userId);
             project.setCreateTime(new Date().getTime());
         }
         project.setProjectName(projectVo.getProjectName());

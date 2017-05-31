@@ -13,6 +13,8 @@ import java.util.List;
 @Component
 public class RedisAdapter {
 
+    private static final String EVENT = "event";
+
     @Autowired
     private JedisPool jedisPool;
 
@@ -88,6 +90,7 @@ public class RedisAdapter {
         }
     }
 
+
     public List<String> lrange(String key, int start, int end) {
         Jedis jedis = null;
         try {
@@ -114,5 +117,9 @@ public class RedisAdapter {
                 jedis.close();
             }
         }
+    }
+
+    public static String getEventKey(){
+        return EVENT;
     }
 }

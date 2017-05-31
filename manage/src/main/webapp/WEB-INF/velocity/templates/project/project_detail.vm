@@ -109,12 +109,14 @@
                                     <li><a href="javascript:void(0);" type="submit" id="submit">保存</a></li>
                                     <li><a href="#basic" id="sub_deploy">保存并部署</a></li>
                                 </ul>
+
                             </div>
-                            #if($!pv.status == 1)
-                                <button id="stop" class="btn red">停止</button>
-                            #else
-                                <button type="submit" id="restart" class="btn green">重新启动</button>
-                            #end
+##                            #if($!pv.status == 1)
+##                                <button id="stop" class="btn red">停止</button>
+##                            #else
+##                                <button type="submit" id="restart" class="btn green">重新启动</button>
+##                            #end
+                                <a href="#proLog" id="showProLog" class="btn yellow">查看日志</a>
                         </div>
                     </form>
                 </div>
@@ -156,10 +158,119 @@
                         <button type="button" id="log_close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
                     </div>
                 </div>
-                <!-- /.modal-content -->
+
             </div>
-            <!-- /.modal-dialog -->
+
         </div>
+
+        <div class="modal fade" id="proLog" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"></button>
+                        <h4 class="modal-title" id="llg_title">实时日志</h4>
+                    </div>
+                    <div class="modal-body" id="project_log">
+                        java.lang.NullPointerException
+                        at mobi.mixiong.wx.ds.subscribe_user.SubscribeUserDs.saveSubscribeUser(SubscribeUserDs.java:104)
+                        at mobi.mixiong.wx.callback_msg_processor.SubscribeMsgProcessor.process(SubscribeMsgProcessor.java:73)
+                        at mobi.mixiong.wx.api.WxCallbackApi.processMsg(WxCallbackApi.java:126)
+                        at mobi.mixiong.wx.api.WxCallbackApi.callback(WxCallbackApi.java:95)
+                        at sun.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+                        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.lang.reflect.Method.invoke(Method.java:498)
+                        at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+                        at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+                        at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+                        at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+                        at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+                        at org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpContainer.service(GrizzlyHttpContainer.java:375)
+                        at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:224)
+                        at java.lang.Thread.run(Thread.java:745)
+                        2017-05-25 20:44:03 715000192 [grizzly-http-server-6] ERROR mobi.mixiong.wx.application.exception.ExceptionMapperSupport:29  -
+                        java.lang.NullPointerException
+                        at mobi.mixiong.wx.callback_msg_processor.SelfMenuClickMsgProcessor.getRepMsg(SelfMenuClickMsgProcessor.java:53)
+                        at mobi.mixiong.wx.callback_msg_processor.SelfMenuClickMsgProcessor.process(SelfMenuClickMsgProcessor.java:39)
+                        at mobi.mixiong.wx.api.WxCallbackApi.processMsg(WxCallbackApi.java:126)
+                        at mobi.mixiong.wx.api.WxCallbackApi.callback(WxCallbackApi.java:95)
+                        at sun.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+                        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.lang.reflect.Method.invoke(Method.java:498)
+                        at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+                        at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+                        at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+                        at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+                        at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+                        at org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpContainer.service(GrizzlyHttpContainer.java:375)
+                        at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:224)
+                        at java.lang.Thread.run(Thread.java:745)
+                        2017-05-25 20:44:06 715003543 [grizzly-http-server-6] ERROR mobi.mixiong.wx.ds.activity.UserActivityDs:202  - create qr code error
+                        java.lang.NullPointerException
+                        at mobi.mixiong.wx.ds.wx_open.WxOpenMediaDs.updateMedia(WxOpenMediaDs.java:30)
+                        at mobi.mixiong.wx.ds.wx_open.WxOpenMediaDs.uploadImage(WxOpenMediaDs.java:24)
+                        at mobi.mixiong.wx.ds.activity.UserActivityDs.createMedia(UserActivityDs.java:199)
+                        at mobi.mixiong.wx.ds.activity.UserActivityDs.sendMaterial(UserActivityDs.java:165)
+                        at mobi.mixiong.wx.ds.activity.ActivityHandler.attend(ActivityHandler.java:165)
+                        at mobi.mixiong.wx.ds.activity.UserActivityDs.attendActivity(UserActivityDs.java:124)
+                        at mobi.mixiong.wx.ds.activity.UserActivityDs.attendActivityByUnityId(UserActivityDs.java:110)
+                        at mobi.mixiong.wx.callback_msg_processor.ScanProcessor.process(ScanProcessor.java:45)
+                        at mobi.mixiong.wx.api.WxCallbackApi.processMsg(WxCallbackApi.java:126)
+                        at mobi.mixiong.wx.api.WxCallbackApi.callback(WxCallbackApi.java:95)
+                        at sun.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+                        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                        at java.lang.reflect.Method.invoke(Method.java:498)
+                        at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+                        at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+                        at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+                        at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+                        at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+                        at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+                        at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+                        at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+                        at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+                        at org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpContainer.service(GrizzlyHttpContainer.java:375)
+                        at org.glassfish.grizzly.http.server.HttpHandler$1.run(HttpHandler.java:224)
+                        at java.lang.Thread.run(Thread.java:745)
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="log_close" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
 
         <div class="col-md-6 ">
             <div class="portlet light bordered">

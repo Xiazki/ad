@@ -1,0 +1,91 @@
+<div class="page-fixed-main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="portlet light portlet-fit bordered">
+                <div class="portlet-title">
+                    <input type="hidden" id="id" value="$!vo.id">
+                    <div class="caption">
+                        <i class="icon-book-open font-green"></i>
+                        <span class="caption-subject bold font-green uppercase"> $!vo.title </span>
+                        <span class="caption-helper">$!vo.creatorName 创建于 $!vo.createTime</span>
+                    </div>
+                </div>
+
+                <div class="portlet-body">
+                    <div id="question_detail">
+                        $!vo.questionDesc
+                    </div>
+
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ">
+                            <li class="active">
+                                <a href="#tab_1" data-toggle="tab" aria-expanded="true"> 评论 </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab_1">
+                                <!-- TASK COMMENTS -->
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <ul class="media-list" id="commnet">
+                                            <li class="media">
+                                                <a class="pull-left" href="javascript:;"></a>
+                                                <div class="media-body todo-comment">
+                                                    <p class="todo-comment-head">
+                                                        <span class="todo-comment-username">test</span>
+                                                        &nbsp;
+                                                        <span class="todo-comment-date">2017-5-5</span>
+                                                    </p>
+                                                    <p class="todo-text-color">
+                                                        我回答了这个问题，
+                                                    </p>
+                                                    <!-- Nested media object -->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END TASK COMMENTS -->
+                                <!-- TASK COMMENT FORM -->
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <ul class="media-list">
+                                            <li class="media">
+                                                <div class="media-body">
+                                                    <textarea id="c_content" class="form-control todo-taskbody-taskdesc"
+                                                              rows="4" placeholder="输入评论"></textarea>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <button type="button" id="c_sub" onclick="javascript:"
+                                                class="pull-right btn btn-sm btn-circle green"> &nbsp;
+                                            提交&nbsp; </button>
+                                    </div>
+                                </div>
+
+                                <script>
+
+                                    $("#c_sub").bind('click', function () {
+
+                                        var time = new Date();
+                                        var time_str = (time.getHours() + ':' + time.getMinutes());
+
+                                        var valc = $('#c_content').val();
+                                        $('#commnet').append('  <li class="media"><a class="pull-left" href="javascript:;"></a> <p class="todo-comment-head">' +
+                                                '  <span class="todo-comment-username">test</span> &nbsp' +
+                                                '<span class="todo-comment-date">' + time_str + '</span>    </p>' +
+                                                '<p class="todo-text-color">' +
+                                                valc + '</p>' +
+                                                ' </div></li>')
+                                    });
+
+                                </script>
+                                <!-- END TASK COMMENT FORM -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

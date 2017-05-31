@@ -126,6 +126,34 @@
             </div>
             <!-- /.modal-dialog -->
         </div>
+        <div class="modal fade" id="tranform"  role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"></button>
+                        <h4 class="modal-title">查找用户</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-body">
+                            <div class="form-group">
+                                <label>用户</label>
+                                <div class="input-group">
+                                    <select class="form-control select2" id="select_users" style="width: 100%">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="" class="btn dark btn-outline" data-dismiss="modal">关闭</button>
+                        <button type="button" id="tranform_submit" class="btn green">保存</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
         <div class="col-md-6">
             <div class="portlet light portlet-fit bg-inverse ">
                 <div class="portlet-title">
@@ -153,6 +181,8 @@
                                             <i class="icon-docs font-blue"></i>
                                         #elseif($!p.entityType == 5)
                                             <i class="icon-bag font-grey"></i>
+                                        #elseif($!p.entityType == 6)
+                                            <i class="icon-user font-yellow"></i>
                                         #end
                                     </div>
                                 </div>
@@ -174,6 +204,8 @@
                                                     重新打开了这个问题
                                                 #elseif($!p.entityType == 5)
                                                     重新编辑了这个问题
+                                                #elseif($!p.entityType == 6)
+                                                    接管了这个问题
                                                 #end
                                             </span>
                                             <span class="timeline-body-time font-grey-cascade"> 于 $!p.createTime</span>

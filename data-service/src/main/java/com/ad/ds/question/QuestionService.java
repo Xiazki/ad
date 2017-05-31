@@ -46,6 +46,20 @@ public class QuestionService {
 
     }
 
+    public void transferToOther(Long id, Long userId) {
+        Question question = getById(id);
+        question.setPrincipalId(userId);
+        question.setUpdateTime(System.currentTimeMillis());
+        questionDao.update(question);
+
+        QuestionProcess questionProcess = new QuestionProcess();
+        questionProcess.setCreateTime(System.currentTimeMillis());
+        questionProcess.setQuestionId(question.getId());
+        questionProcess.setEntityId(question.getPrincipalId());
+        questionProcess.setEntityType(QuestionStatus.TRANSFER.getStatus());
+        questionProcessDao.save(questionProcess);
+    }
+
     public List<Question> listByPrincipal(Long userId, Long projectId, Integer type, Integer start, Integer length, String searchInfo) {
         return questionDao.listBuPrincipalId(userId, projectId, type, start, length, searchInfo);
     }
