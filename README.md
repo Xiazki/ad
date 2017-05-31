@@ -12,4 +12,25 @@
 + 个人待办任务管理包括创建个人待办，完成待办；
 + 团队即时通讯，团队成员可以在一起进行聊天；
 + 问题广场，用户可以发布自己的问题到问题广场，用户可以才问题下评论给出自己的答案。
+## 登陆
 ![Alt text](/img/login.png)
+
+## 主页
+![Alt text](/img/home.png)
+
+## 问题处理
+![Alt text](/img/question.png)
+
+## 问题详情
+![Alt text](/img/question_detail.png)
+
+## 项目部署
+![Alt text](/img/project.png)
+
+## 开发任务
+![Alt text](/img/task.png)
+
+## 聊天
+![Alt text](/img/chat.png)
+
+
