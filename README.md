@@ -12,4 +12,4 @@
 + 个人待办任务管理包括创建个人待办，完成待办；
 + 团队即时通讯，团队成员可以在一起进行聊天；
 + 问题广场，用户可以发布自己的问题到问题广场，用户可以才问题下评论给出自己的答案。
-![Alt text](/img/login.jpg)
+![Alt text](https://github.com/Xiazki/ad/tree/develop/img)
